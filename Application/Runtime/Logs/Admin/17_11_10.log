@@ -1,0 +1,1595 @@
+[ 2017-11-10T11:40:26+08:00 ] 27.38.29.54 /admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001076s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000923s ]
+
+[ 2017-11-10T11:40:29+08:00 ] 27.38.29.54 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001096s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Common/functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `flyin_admin` [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011341s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011460s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000618s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000889s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000983s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:40:29+08:00 ] 27.38.29.54 /Admin/Login/Verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000779s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:40:37+08:00 ] 27.38.29.54 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Common/functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `flyin_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `flyin_admin` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `flyin_adminlog` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `flyin_adminlog` [ RunTime:0.0013s ]
+SQL: INSERT INTO `flyin_adminlog` (`admin_id`,`op_log`,`op_time`) VALUES ('1','登录系统','1510285237') [ RunTime:0.0162s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007296s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000652s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:40:38+08:00 ] 27.38.29.54 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0013s ]
+SQL: select version() as ver [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0013s ]
+SQL: SELECT SUM(hits) AS tp_sum FROM `flyin_goods` ORDER BY hits LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(pdfhits) AS tp_sum FROM `flyin_goods` ORDER BY pdfhits LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT MAX(hits) AS tp_max FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT MIN(hits) AS tp_min FROM `flyin_goods` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `flyin_goods` ORDER BY hits LIMIT 3   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `flyin_goods` ORDER BY hits desc LIMIT 3   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `flyin_ipcount` [ RunTime:0.0014s ]
+SQL: SELECT `nowdatec` FROM `flyin_ipcount` WHERE ( nowdate="2017-11-09" )  [ RunTime:0.0003s ]
+SQL: SELECT `ip` FROM `flyin_ipcount` WHERE ( nowdate="2017-11-10" )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Db/Driver.class.php 第 794 行.
+SQL: INSERT INTO `flyin_ipcount` (`nowdatec`,`nowdate`,`ip`) VALUES ('1','2017-11-10','27.38.29.54') [ RunTime:0.0129s ]
+SQL: SELECT `ip` FROM `flyin_ipcount` WHERE ( ip like "%27.38.29.54%" and nowdate="2017-11-10" )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/IndexController.class.php 第 65 行.
+SQL: SELECT `nowdatec` FROM `flyin_ipcount` WHERE ( nowdate="2017-11-10" )  [ RunTime:0.0002s ]
+SQL: SELECT SUM(hits) AS tp_sum FROM `flyin_goods` ORDER BY hits LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(pdfhits) AS tp_sum FROM `flyin_goods` ORDER BY pdfhits LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT MAX(hits) AS tp_max FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT MIN(hits) AS tp_min FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `flyin_goods` ORDER BY hits LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `flyin_goods` ORDER BY hits desc LIMIT 3   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/IndexController.class.php 第 100 行.
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0017s ]
+SQL: select count(a.newcategory_id) as num,c.name,c.id from flyin_news a,flyin_newcategory c where a.newcategory_id=c.id group by c.name order by c.id desc [ RunTime:0.0016s ]
+NOTIC: [8] Use of undefined constant services - assumed 'services' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/IndexController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0014s ]
+SQL: select count(a.servicecategory_id) as num,c.name,c.id from flyin_services a,flyin_servicecategory c where a.servicecategory_id=c.id group by c.name order by c.id desc [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant goods - assumed 'goods' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/IndexController.class.php 第 110 行.
+SQL: select count(a.cat_id) as num,c.cat_name,c.cat_id from flyin_goods a,flyin_category c where a.cat_id=c.cat_id group by c.cat_name order by c.cat_id desc [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant banners - assumed 'banners' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/IndexController.class.php 第 114 行.
+SQL: SHOW COLUMNS FROM `flyin_banners` [ RunTime:0.0011s ]
+SQL: select count(a.bannercategory_id) as num,c.name,c.id from flyin_banners a,flyin_bannercategory c where a.bannercategory_id=c.id group by c.name order by c.id desc [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Undefined variable: admin_name /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 32 行.
+NOTIC: [8] Use of undefined constant goods_name - assumed 'goods_name' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 258 行.
+NOTIC: [8] Use of undefined constant hits - assumed 'hits' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 259 行.
+NOTIC: [8] Use of undefined constant goods_name - assumed 'goods_name' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 263 行.
+NOTIC: [8] Use of undefined constant hits - assumed 'hits' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 264 行.
+NOTIC: [8] Use of undefined constant goods_name - assumed 'goods_name' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 268 行.
+NOTIC: [8] Use of undefined constant hits - assumed 'hits' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 269 行.
+NOTIC: [8] Use of undefined constant goods_name - assumed 'goods_name' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 273 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029116s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000719s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:40:49+08:00 ] 59.40.72.26 /Admin/Goods/view.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM flyin_goods as g LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0015s ]
+SQL: SELECT g.*,c.cat_name FROM flyin_goods as g LEFT JOIN flyin_category as c ON g.cat_id = c.cat_id  ORDER BY g.hot asc LIMIT 0,10   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+NOTIC: [8] Undefined variable: admin_name /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/84f1686bb48cfda6a91f8554266eb444.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034679s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034776s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000804s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:40:49+08:00 ] 59.40.72.26 /Admin/Goods/qrcode2/goods_id/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001090s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000804s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000911s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:40:49+08:00 ] 59.40.72.26 /Admin/Goods/qrcode2/goods_id/13.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001139s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000651s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000744s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:40:49+08:00 ] 27.38.29.54 /Admin/Goods/qrcode2/goods_id/17.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000849s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:40:50+08:00 ] 59.40.72.153 /Admin/Goods/qrcode2/goods_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000812s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:40:50+08:00 ] 59.40.72.26 /Admin/Goods/qrcode2/goods_id/18.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000800s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000908s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:40:50+08:00 ] 27.38.29.54 /Admin/Goods/qrcode2/goods_id/19.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001120s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000747s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:40:50+08:00 ] 59.40.72.26 /Admin/Goods/qrcode2/goods_id/23.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001186s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000632s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000728s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:40:50+08:00 ] 59.40.72.26 /Admin/Goods/qrcode2/goods_id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000791s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000896s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:40:50+08:00 ] 27.38.29.54 /Admin/Goods/qrcode2/goods_id/20.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001508s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000823s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:40:50+08:00 ] 59.40.72.153 /Admin/Goods/qrcode2/goods_id/21.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001035s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000735s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:40:58+08:00 ] 59.40.72.153 /Admin/Goods/edit/goods_id/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0014s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g JOIN flyin_parameter as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '9'  [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0019s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g JOIN flyin_gallery as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '9'  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] Undefined variable: admin_name /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/7c6220ae8240e866385ea468ca84c314.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000969s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001013s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001132s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:41:14+08:00 ] 59.40.72.153 /Admin/Goods/view.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM flyin_goods as g LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0027s ]
+SQL: SELECT g.*,c.cat_name FROM flyin_goods as g LEFT JOIN flyin_category as c ON g.cat_id = c.cat_id  ORDER BY g.hot asc LIMIT 0,10   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+NOTIC: [8] Undefined variable: admin_name /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/84f1686bb48cfda6a91f8554266eb444.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032740s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000683s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000932s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001033s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:41:15+08:00 ] 27.38.29.54 /Admin/Goods/qrcode2/goods_id/13.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000775s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000887s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:41:15+08:00 ] 59.40.72.26 /Admin/Goods/qrcode2/goods_id/17.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001084s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000783s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:41:15+08:00 ] 59.40.72.153 /Admin/Goods/qrcode2/goods_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:41:15+08:00 ] 59.40.72.153 /Admin/Goods/qrcode2/goods_id/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001568s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000782s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000901s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:41:15+08:00 ] 59.40.72.26 /Admin/Goods/qrcode2/goods_id/20.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001124s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000899s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:41:15+08:00 ] 59.40.72.26 /Admin/Goods/qrcode2/goods_id/18.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000795s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:41:15+08:00 ] 59.40.72.153 /Admin/Goods/qrcode2/goods_id/21.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000654s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000753s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:41:15+08:00 ] 27.38.29.54 /Admin/Goods/qrcode2/goods_id/19.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001277s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000827s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:41:16+08:00 ] 59.40.72.26 /Admin/Goods/qrcode2/goods_id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000754s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:41:16+08:00 ] 59.40.72.153 /Admin/Goods/qrcode2/goods_id/23.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000799s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:41:17+08:00 ] 59.40.72.153 /Admin/Goods/edit/goods_id/13.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0013s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g JOIN flyin_parameter as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '13'  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0013s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g JOIN flyin_gallery as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '13'  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+NOTIC: [8] Undefined variable: admin_name /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/7c6220ae8240e866385ea468ca84c314.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031158s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000507s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:41:40+08:00 ] 27.38.29.54 /Admin/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001314s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM flyin_news n WHERE n.recycle = 'no' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT c.name as newcategory_name,n.newcategory_id,n.custom_time,n.id,n.thumb,n.name,n.on_sale,n.recommend FROM flyin_news n LEFT JOIN flyin_newcategory AS c ON c.id=n.newcategory_id  WHERE n.recycle = 'no' ORDER BY n.id desc LIMIT 0,10   [ RunTime:0.0004s ]
+DEBUG: Array
+(
+    [news] => Array
+        (
+            [data] => Array
+                (
+                    [0] => Array
+                        (
+                            [newcategory_name] => 公司新闻
+                            [newcategory_id] => 15
+                            [custom_time] => 2016-09-01
+                            [id] => 4
+                            [thumb] => 2017-09/19/59c0fd540f5bb.png
+                            [name] => 飞宇集团张家界一周游
+                            [on_sale] => yes
+                            [recommend] => yes
+                        )
+
+                )
+
+            [pagelist] => <div>     <span class="rows">共<b>1</b>条记录 第<b>1</b>页/共<b>1</b>页</span></div>
+        )
+
+)
+
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+NOTIC: [8] Undefined variable: admin_name /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028547s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000445s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001045s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000643s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:41:45+08:00 ] 27.38.29.54 /Admin/Message/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001040s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_message` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: p /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/MessageController.class.php 第 7 行.
+NOTIC: [8] Undefined index: limit /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Db/Driver.class.php 第 952 行.
+SQL: SELECT * FROM `flyin_message` ORDER BY time desc LIMIT 0,20   [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_message` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+NOTIC: [8] Undefined variable: admin_name /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021654s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000440s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000866s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000651s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:41:46+08:00 ] 59.40.72.26 /Admin/Map/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001060s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::assign(), called in /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/MapController.class.php on line 9 and defined /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Controller.class.php 第 121 行.
+NOTIC: [8] Undefined variable: name /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Controller.class.php 第 122 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Undefined variable: admin_name /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/20b2b027abdff0ac9ab38bcfe787c1cb.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018959s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000474s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000893s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000635s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:41:49+08:00 ] 27.38.29.54 /Admin/Pdf/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001062s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: keywords /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/PdfController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `flyin_goods` WHERE ( goods_pdf like '%%' &&  goods_pdf!= ''   ) ORDER BY goods_id  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+NOTIC: [8] Undefined variable: admin_name /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/321e58a49ba886f62cd30ed606b505fe.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022252s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000655s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:41:50+08:00 ] 59.40.72.26 /Admin/Map/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::assign(), called in /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/MapController.class.php on line 9 and defined /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Controller.class.php 第 121 行.
+NOTIC: [8] Undefined variable: name /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Controller.class.php 第 122 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined variable: admin_name /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/20b2b027abdff0ac9ab38bcfe787c1cb.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018252s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000632s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:41:54+08:00 ] 59.40.72.26 /Admin/Services/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM flyin_services n WHERE n.recycle = 'no' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT c.name as servicecategory_name,n.servicecategory_id,n.date,n.id,n.name,n.on_sale,n.recommend FROM flyin_services n LEFT JOIN flyin_servicecategory AS c ON c.id=n.servicecategory_id  WHERE n.recycle = 'no' ORDER BY n.id desc LIMIT 0,10   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+NOTIC: [8] Undefined variable: admin_name /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/dcf0c7104e1b8ae9fa73190a42a24c26.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029165s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:41:58+08:00 ] 27.38.29.54 /Admin/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM flyin_news n WHERE n.recycle = 'no' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT c.name as newcategory_name,n.newcategory_id,n.custom_time,n.id,n.thumb,n.name,n.on_sale,n.recommend FROM flyin_news n LEFT JOIN flyin_newcategory AS c ON c.id=n.newcategory_id  WHERE n.recycle = 'no' ORDER BY n.id desc LIMIT 0,10   [ RunTime:0.0002s ]
+DEBUG: Array
+(
+    [news] => Array
+        (
+            [data] => Array
+                (
+                    [0] => Array
+                        (
+                            [newcategory_name] => 公司新闻
+                            [newcategory_id] => 15
+                            [custom_time] => 2016-09-01
+                            [id] => 4
+                            [thumb] => 2017-09/19/59c0fd540f5bb.png
+                            [name] => 飞宇集团张家界一周游
+                            [on_sale] => yes
+                            [recommend] => yes
+                        )
+
+                )
+
+            [pagelist] => <div>     <span class="rows">共<b>1</b>条记录 第<b>1</b>页/共<b>1</b>页</span></div>
+        )
+
+)
+
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined variable: admin_name /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024877s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000398s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000548s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000609s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:42:00+08:00 ] 59.40.72.26 /Admin/Goods/view.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM flyin_goods as g LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0012s ]
+SQL: SELECT g.*,c.cat_name FROM flyin_goods as g LEFT JOIN flyin_category as c ON g.cat_id = c.cat_id  ORDER BY g.hot asc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+NOTIC: [8] Undefined variable: admin_name /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/84f1686bb48cfda6a91f8554266eb444.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000646s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:42:00+08:00 ] 27.38.29.54 /Admin/Goods/qrcode2/goods_id/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001591s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000688s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000798s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:42:01+08:00 ] 27.38.29.54 /Admin/Goods/qrcode2/goods_id/13.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001089s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000781s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:42:01+08:00 ] 59.40.72.153 /Admin/Goods/qrcode2/goods_id/18.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001090s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:42:01+08:00 ] 59.40.72.26 /Admin/Goods/qrcode2/goods_id/20.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000693s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:42:01+08:00 ] 59.40.72.26 /Admin/Goods/qrcode2/goods_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000733s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:42:01+08:00 ] 59.40.72.153 /Admin/Goods/qrcode2/goods_id/23.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001060s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000742s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:42:01+08:00 ] 59.40.72.26 /Admin/Goods/qrcode2/goods_id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001108s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000752s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000864s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:42:01+08:00 ] 27.38.29.54 /Admin/Goods/qrcode2/goods_id/19.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001130s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000777s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:42:01+08:00 ] 27.38.29.54 /Admin/Goods/qrcode2/goods_id/21.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000757s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:42:01+08:00 ] 27.38.29.54 /Admin/Goods/qrcode2/goods_id/17.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001186s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000837s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:42:30+08:00 ] 59.40.72.26 /Admin/Goods/edit/goods_id/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001062s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0014s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g JOIN flyin_parameter as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '9'  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0013s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g JOIN flyin_gallery as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '9'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] Undefined variable: admin_name /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/7c6220ae8240e866385ea468ca84c314.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000441s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000595s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000659s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:42:36+08:00 ] 59.40.72.26 /Admin/Banners/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001043s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_banners` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `flyin_bannercategory` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM flyin_banners n WHERE n.recycle = 'no' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT c.name as bannercategory_name,n.bannercategory_id,n.id,n.rank,n.thumb,n.banner_name,n.on_sale,n.recommend FROM flyin_banners n LEFT JOIN flyin_bannercategory AS c ON c.id=n.bannercategory_id  WHERE n.recycle = 'no' ORDER BY n.id desc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_bannercategory`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+NOTIC: [8] Undefined variable: admin_name /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/a2952f76d7da2e43614500de56615be4.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000785s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:42:40+08:00 ] 59.40.72.26 /Admin/AboutUs/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001572s ]
+SQL: SHOW COLUMNS FROM `flyin_aboutus` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `flyin_aboutus` ORDER BY id  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined variable: admin_name /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/95f7d8051193e6dc0ac81dccd9c9f926.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025529s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000703s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:42:42+08:00 ] 59.40.72.26 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: select version() as ver [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0012s ]
+SQL: SELECT SUM(hits) AS tp_sum FROM `flyin_goods` ORDER BY hits LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(pdfhits) AS tp_sum FROM `flyin_goods` ORDER BY pdfhits LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT MAX(hits) AS tp_max FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT MIN(hits) AS tp_min FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `flyin_goods` ORDER BY hits LIMIT 3   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `flyin_goods` ORDER BY hits desc LIMIT 3   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `flyin_ipcount` [ RunTime:0.0010s ]
+SQL: SELECT `nowdatec` FROM `flyin_ipcount` WHERE ( nowdate="2017-11-09" )  [ RunTime:0.0003s ]
+SQL: SELECT `ip` FROM `flyin_ipcount` WHERE ( nowdate="2017-11-10" )  [ RunTime:0.0003s ]
+SQL: SELECT `ip` FROM `flyin_ipcount` WHERE ( ip like "%59.40.72.26%" and nowdate="2017-11-10" )  [ RunTime:0.0005s ]
+SQL: SELECT `nowdatec` FROM `flyin_ipcount` WHERE ( nowdate="2017-11-10" )  [ RunTime:0.0002s ]
+SQL: UPDATE `flyin_ipcount` SET `nowdatec`='2',`nowdate`='2017-11-10',`ip`='27.38.29.5459.40.72.26' WHERE ( nowdate="2017-11-10" ) [ RunTime:0.0083s ]
+SQL: SELECT `nowdatec` FROM `flyin_ipcount` WHERE ( nowdate="2017-11-10" )  [ RunTime:0.0005s ]
+SQL: SELECT SUM(hits) AS tp_sum FROM `flyin_goods` ORDER BY hits LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(pdfhits) AS tp_sum FROM `flyin_goods` ORDER BY pdfhits LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT MAX(hits) AS tp_max FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT MIN(hits) AS tp_min FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `flyin_goods` ORDER BY hits LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `flyin_goods` ORDER BY hits desc LIMIT 3   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/IndexController.class.php 第 100 行.
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0027s ]
+SQL: select count(a.newcategory_id) as num,c.name,c.id from flyin_news a,flyin_newcategory c where a.newcategory_id=c.id group by c.name order by c.id desc [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant services - assumed 'services' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/IndexController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0012s ]
+SQL: select count(a.servicecategory_id) as num,c.name,c.id from flyin_services a,flyin_servicecategory c where a.servicecategory_id=c.id group by c.name order by c.id desc [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant goods - assumed 'goods' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/IndexController.class.php 第 110 行.
+SQL: select count(a.cat_id) as num,c.cat_name,c.cat_id from flyin_goods a,flyin_category c where a.cat_id=c.cat_id group by c.cat_name order by c.cat_id desc [ RunTime:0.0011s ]
+NOTIC: [8] Use of undefined constant banners - assumed 'banners' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/IndexController.class.php 第 114 行.
+SQL: SHOW COLUMNS FROM `flyin_banners` [ RunTime:0.0014s ]
+SQL: select count(a.bannercategory_id) as num,c.name,c.id from flyin_banners a,flyin_bannercategory c where a.bannercategory_id=c.id group by c.name order by c.id desc [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] Undefined variable: admin_name /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 32 行.
+NOTIC: [8] Use of undefined constant goods_name - assumed 'goods_name' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 258 行.
+NOTIC: [8] Use of undefined constant hits - assumed 'hits' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 259 行.
+NOTIC: [8] Use of undefined constant goods_name - assumed 'goods_name' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 263 行.
+NOTIC: [8] Use of undefined constant hits - assumed 'hits' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 264 行.
+NOTIC: [8] Use of undefined constant goods_name - assumed 'goods_name' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 268 行.
+NOTIC: [8] Use of undefined constant hits - assumed 'hits' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 269 行.
+NOTIC: [8] Use of undefined constant goods_name - assumed 'goods_name' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 273 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028256s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000852s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000623s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:42:47+08:00 ] 59.40.72.26 /Admin/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM flyin_news n WHERE n.recycle = 'no' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT c.name as newcategory_name,n.newcategory_id,n.custom_time,n.id,n.thumb,n.name,n.on_sale,n.recommend FROM flyin_news n LEFT JOIN flyin_newcategory AS c ON c.id=n.newcategory_id  WHERE n.recycle = 'no' ORDER BY n.id desc LIMIT 0,10   [ RunTime:0.0002s ]
+DEBUG: Array
+(
+    [news] => Array
+        (
+            [data] => Array
+                (
+                    [0] => Array
+                        (
+                            [newcategory_name] => 公司新闻
+                            [newcategory_id] => 15
+                            [custom_time] => 2016-09-01
+                            [id] => 4
+                            [thumb] => 2017-09/19/59c0fd540f5bb.png
+                            [name] => 飞宇集团张家界一周游
+                            [on_sale] => yes
+                            [recommend] => yes
+                        )
+
+                )
+
+            [pagelist] => <div>     <span class="rows">共<b>1</b>条记录 第<b>1</b>页/共<b>1</b>页</span></div>
+        )
+
+)
+
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+NOTIC: [8] Undefined variable: admin_name /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000608s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:42:49+08:00 ] 59.40.72.26 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: select version() as ver [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0017s ]
+SQL: SELECT SUM(hits) AS tp_sum FROM `flyin_goods` ORDER BY hits LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(pdfhits) AS tp_sum FROM `flyin_goods` ORDER BY pdfhits LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT MAX(hits) AS tp_max FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT MIN(hits) AS tp_min FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `flyin_goods` ORDER BY hits LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `flyin_goods` ORDER BY hits desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `flyin_ipcount` [ RunTime:0.0014s ]
+SQL: SELECT `nowdatec` FROM `flyin_ipcount` WHERE ( nowdate="2017-11-09" )  [ RunTime:0.0003s ]
+SQL: SELECT `ip` FROM `flyin_ipcount` WHERE ( nowdate="2017-11-10" )  [ RunTime:0.0002s ]
+SQL: SELECT `ip` FROM `flyin_ipcount` WHERE ( ip like "%59.40.72.26%" and nowdate="2017-11-10" )  [ RunTime:0.0003s ]
+SQL: SELECT `nowdatec` FROM `flyin_ipcount` WHERE ( nowdate="2017-11-10" )  [ RunTime:0.0001s ]
+SQL: SELECT SUM(hits) AS tp_sum FROM `flyin_goods` ORDER BY hits LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(pdfhits) AS tp_sum FROM `flyin_goods` ORDER BY pdfhits LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT MAX(hits) AS tp_max FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT MIN(hits) AS tp_min FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `flyin_goods` ORDER BY hits LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `flyin_goods` ORDER BY hits desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/IndexController.class.php 第 100 行.
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0013s ]
+SQL: select count(a.newcategory_id) as num,c.name,c.id from flyin_news a,flyin_newcategory c where a.newcategory_id=c.id group by c.name order by c.id desc [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant services - assumed 'services' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/IndexController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0011s ]
+SQL: select count(a.servicecategory_id) as num,c.name,c.id from flyin_services a,flyin_servicecategory c where a.servicecategory_id=c.id group by c.name order by c.id desc [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant goods - assumed 'goods' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/IndexController.class.php 第 110 行.
+SQL: select count(a.cat_id) as num,c.cat_name,c.cat_id from flyin_goods a,flyin_category c where a.cat_id=c.cat_id group by c.cat_name order by c.cat_id desc [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant banners - assumed 'banners' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/IndexController.class.php 第 114 行.
+SQL: SHOW COLUMNS FROM `flyin_banners` [ RunTime:0.0011s ]
+SQL: select count(a.bannercategory_id) as num,c.name,c.id from flyin_banners a,flyin_bannercategory c where a.bannercategory_id=c.id group by c.name order by c.id desc [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+NOTIC: [8] Undefined variable: admin_name /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 32 行.
+NOTIC: [8] Use of undefined constant goods_name - assumed 'goods_name' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 258 行.
+NOTIC: [8] Use of undefined constant hits - assumed 'hits' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 259 行.
+NOTIC: [8] Use of undefined constant goods_name - assumed 'goods_name' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 263 行.
+NOTIC: [8] Use of undefined constant hits - assumed 'hits' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 264 行.
+NOTIC: [8] Use of undefined constant goods_name - assumed 'goods_name' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 268 行.
+NOTIC: [8] Use of undefined constant hits - assumed 'hits' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 269 行.
+NOTIC: [8] Use of undefined constant goods_name - assumed 'goods_name' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 273 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000548s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000619s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:43:15+08:00 ] 27.38.29.54 /Admin/Common/makeurl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000752s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000829s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T11:44:23+08:00 ] 59.40.72.26 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: select version() as ver [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0012s ]
+SQL: SELECT SUM(hits) AS tp_sum FROM `flyin_goods` ORDER BY hits LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(pdfhits) AS tp_sum FROM `flyin_goods` ORDER BY pdfhits LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT MAX(hits) AS tp_max FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT MIN(hits) AS tp_min FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `flyin_goods` ORDER BY hits LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `flyin_goods` ORDER BY hits desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `flyin_ipcount` [ RunTime:0.0010s ]
+SQL: SELECT `nowdatec` FROM `flyin_ipcount` WHERE ( nowdate="2017-11-09" )  [ RunTime:0.0001s ]
+SQL: SELECT `ip` FROM `flyin_ipcount` WHERE ( nowdate="2017-11-10" )  [ RunTime:0.0001s ]
+SQL: SELECT `ip` FROM `flyin_ipcount` WHERE ( ip like "%59.40.72.26%" and nowdate="2017-11-10" )  [ RunTime:0.0001s ]
+SQL: SELECT `nowdatec` FROM `flyin_ipcount` WHERE ( nowdate="2017-11-10" )  [ RunTime:0.0001s ]
+SQL: SELECT SUM(hits) AS tp_sum FROM `flyin_goods` ORDER BY hits LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(pdfhits) AS tp_sum FROM `flyin_goods` ORDER BY pdfhits LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT MAX(hits) AS tp_max FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT MIN(hits) AS tp_min FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `flyin_goods` ORDER BY hits LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `flyin_goods` ORDER BY hits desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/IndexController.class.php 第 100 行.
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0010s ]
+SQL: select count(a.newcategory_id) as num,c.name,c.id from flyin_news a,flyin_newcategory c where a.newcategory_id=c.id group by c.name order by c.id desc [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant services - assumed 'services' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/IndexController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0011s ]
+SQL: select count(a.servicecategory_id) as num,c.name,c.id from flyin_services a,flyin_servicecategory c where a.servicecategory_id=c.id group by c.name order by c.id desc [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant goods - assumed 'goods' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/IndexController.class.php 第 110 行.
+SQL: select count(a.cat_id) as num,c.cat_name,c.cat_id from flyin_goods a,flyin_category c where a.cat_id=c.cat_id group by c.cat_name order by c.cat_id desc [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant banners - assumed 'banners' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/IndexController.class.php 第 114 行.
+SQL: SHOW COLUMNS FROM `flyin_banners` [ RunTime:0.0011s ]
+SQL: select count(a.bannercategory_id) as num,c.name,c.id from flyin_banners a,flyin_bannercategory c where a.bannercategory_id=c.id group by c.name order by c.id desc [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Undefined variable: admin_name /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 32 行.
+NOTIC: [8] Use of undefined constant goods_name - assumed 'goods_name' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 258 行.
+NOTIC: [8] Use of undefined constant hits - assumed 'hits' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 259 行.
+NOTIC: [8] Use of undefined constant goods_name - assumed 'goods_name' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 263 行.
+NOTIC: [8] Use of undefined constant hits - assumed 'hits' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 264 行.
+NOTIC: [8] Use of undefined constant goods_name - assumed 'goods_name' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 268 行.
+NOTIC: [8] Use of undefined constant hits - assumed 'hits' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 269 行.
+NOTIC: [8] Use of undefined constant goods_name - assumed 'goods_name' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 273 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027140s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000403s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000615s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T12:51:28+08:00 ] 120.39.243.200 /admin/inc/grouplist.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+ERR: 无法加载控制器:Inc
+NOTIC: [2] include(): Filename cannot be empty /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Filename cannot be empty /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening '' for inclusion (include_path='.:/usr/local/php53/lib/php') /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2017-11-10T12:51:28+08:00 ] 120.39.243.200 /admin/inc/grouplist.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+ERR: 无法加载控制器:Inc
+NOTIC: [2] include(): Filename cannot be empty /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Filename cannot be empty /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening '' for inclusion (include_path='.:/usr/local/php53/lib/php') /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2017-11-10T15:49:51+08:00 ] 59.40.72.153 /admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0003s ]
+SQL: select version() as ver [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0013s ]
+SQL: SELECT SUM(hits) AS tp_sum FROM `flyin_goods` ORDER BY hits LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(pdfhits) AS tp_sum FROM `flyin_goods` ORDER BY pdfhits LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT MAX(hits) AS tp_max FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT MIN(hits) AS tp_min FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `flyin_goods` ORDER BY hits LIMIT 3   [ RunTime:0.0033s ]
+SQL: SELECT * FROM `flyin_goods` ORDER BY hits desc LIMIT 3   [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `flyin_ipcount` [ RunTime:0.0023s ]
+SQL: SELECT `nowdatec` FROM `flyin_ipcount` WHERE ( nowdate="2017-11-09" )  [ RunTime:0.0003s ]
+SQL: SELECT `ip` FROM `flyin_ipcount` WHERE ( nowdate="2017-11-10" )  [ RunTime:0.0002s ]
+SQL: SELECT `ip` FROM `flyin_ipcount` WHERE ( ip like "%59.40.72.153%" and nowdate="2017-11-10" )  [ RunTime:0.0003s ]
+SQL: SELECT `nowdatec` FROM `flyin_ipcount` WHERE ( nowdate="2017-11-10" )  [ RunTime:0.0002s ]
+SQL: UPDATE `flyin_ipcount` SET `nowdatec`='3',`nowdate`='2017-11-10',`ip`='27.38.29.5459.40.72.2659.40.72.153' WHERE ( nowdate="2017-11-10" ) [ RunTime:0.0118s ]
+SQL: SELECT `nowdatec` FROM `flyin_ipcount` WHERE ( nowdate="2017-11-10" )  [ RunTime:0.0002s ]
+SQL: SELECT SUM(hits) AS tp_sum FROM `flyin_goods` ORDER BY hits LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(pdfhits) AS tp_sum FROM `flyin_goods` ORDER BY pdfhits LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT MAX(hits) AS tp_max FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT MIN(hits) AS tp_min FROM `flyin_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `flyin_goods` ORDER BY hits LIMIT 3   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `flyin_goods` ORDER BY hits desc LIMIT 3   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/IndexController.class.php 第 100 行.
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0013s ]
+SQL: select count(a.newcategory_id) as num,c.name,c.id from flyin_news a,flyin_newcategory c where a.newcategory_id=c.id group by c.name order by c.id desc [ RunTime:0.0027s ]
+NOTIC: [8] Use of undefined constant services - assumed 'services' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/IndexController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0011s ]
+SQL: select count(a.servicecategory_id) as num,c.name,c.id from flyin_services a,flyin_servicecategory c where a.servicecategory_id=c.id group by c.name order by c.id desc [ RunTime:0.0016s ]
+NOTIC: [8] Use of undefined constant goods - assumed 'goods' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/IndexController.class.php 第 110 行.
+SQL: select count(a.cat_id) as num,c.cat_name,c.cat_id from flyin_goods a,flyin_category c where a.cat_id=c.cat_id group by c.cat_name order by c.cat_id desc [ RunTime:0.0011s ]
+NOTIC: [8] Use of undefined constant banners - assumed 'banners' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/IndexController.class.php 第 114 行.
+SQL: SHOW COLUMNS FROM `flyin_banners` [ RunTime:0.0016s ]
+SQL: select count(a.bannercategory_id) as num,c.name,c.id from flyin_banners a,flyin_bannercategory c where a.bannercategory_id=c.id group by c.name order by c.id desc [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+NOTIC: [8] Undefined variable: admin_name /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 32 行.
+NOTIC: [8] Use of undefined constant goods_name - assumed 'goods_name' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 258 行.
+NOTIC: [8] Use of undefined constant hits - assumed 'hits' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 259 行.
+NOTIC: [8] Use of undefined constant goods_name - assumed 'goods_name' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 263 行.
+NOTIC: [8] Use of undefined constant hits - assumed 'hits' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 264 行.
+NOTIC: [8] Use of undefined constant goods_name - assumed 'goods_name' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 268 行.
+NOTIC: [8] Use of undefined constant hits - assumed 'hits' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 269 行.
+NOTIC: [8] Use of undefined constant goods_name - assumed 'goods_name' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 273 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031075s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031168s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000399s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000870s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000607s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-10T15:50:48+08:00 ] 27.38.29.54 /Admin/Ipdb/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001101s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/CommonController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `hot` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_ipdb` [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: p /home/flyindat/domains/flyindata.com.cn/public_html/Application/Admin/Controller/IpdbController.class.php 第 7 行.
+NOTIC: [8] Undefined index: limit /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Db/Driver.class.php 第 952 行.
+SQL: SELECT * FROM `flyin_ipdb` ORDER BY time desc LIMIT 0,20   [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_ipdb` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined variable: admin_name /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/Admin/70f968c65de1df1fd51fda44c05f7a97.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021701s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021782s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000712s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+

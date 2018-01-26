@@ -1,0 +1,262 @@
+
+
+<div id="content-header">
+	<div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> banner</a> <a href="#" class="current">商品添加&编辑</a> </div>
+	<h1>商品添加&编辑</h1>
+</div>
+
+<div class="container-fluid">
+	<hr>
+	<div class="row-fluid">
+		<div class="span12">
+
+			<div >
+				<form action="{$act}" class="form-horizontal" method="post" enctype="multipart/form-data"  onsubmit="return validate_form(this)">
+
+
+                <div class="form-group">
+					商品编号:
+                    <div>
+                        <input type="text" name="goods_price" id="goods-price" class="form-control" value="<notempty name='goodsInfo.goods_price'>{$goodsInfo.goods_price}</notempty>" >
+                    </div>
+                </div>
+
+
+
+					<div class="form-group">
+							商品名称:
+						<div>
+							<input type="text" name="goods_name" id="goods-name" class="form-control" value="<notempty name='goodsInfo.goods_name'>{$goodsInfo.goods_name}</notempty>">
+						</div>
+					</div>
+					<div class="form-group">
+						商品描述:
+						<div>
+							<input type="text" name="goods_title" id="goods-title" class="form-control" value="<notempty name='goodsInfo.goods_title'>{$goodsInfo.goods_title}</notempty>">
+						</div>
+
+					</div>
+						<!--
+					<div class="form-group">
+							商品库存:
+						<div>
+							<input type="text" name="goods_stock" id="goods-stock" class="form-control" value="<notempty name='goodsInfo.goods_stock'>{$goodsInfo.goods_stock}</notempty>">
+						</div>
+					</div>
+					<hr>
+-->
+					<div class="form-group">
+						 <i class="icon-picture" style="font-size: 22px"></i>
+						上传图片:
+						<input type="button" onclick="add1();" value="添加"/>
+						<div id="org"></div>
+					</div>
+					<div class="form-group">
+						已上传图片:
+						<div>
+							<notempty name="goodsInfo.gallery">
+								<volist name="goodsInfo.gallery" id="vo">
+									<img src="__PUBLIC__/Uploads/products/small/{$vo.img_center}" alt="" class="thumbnail" style="display: inline-block;width: 60px;height: 60px;">
+								</volist>
+							</notempty>
+						</div>
+					</div>
+					<hr>
+					<div class="form-group">
+							上传PDF: <span style="color: red;">注意PDF文档名字需为英文命名！！</span>
+						<br>
+						<input type='file' name='pdf[]'>
+					</div>
+
+					<div class="form-group">
+						已上传pdf:
+						<div>
+							<!--判断该 $v.pdfthumb 是否为空-->
+							<if condition="$goodsInfo.goods_pdf neq ''">
+								<a href="__PUBLIC__/Uploads/pdf/{$goodsInfo.goods_pdf}" target="_blank">
+									<img src="__PUBLIC__/Home/images/PDF.png" border="0"/>
+									{$goodsInfo.goods_pdf}
+								</a>
+								<else /> 待上传
+							</if>
+						</div>
+					</div>
+					<hr>
+
+					<div class="form-group">
+							商品SKU:
+						<div>
+							<input type="text" name="goods_sku" id="goods-sku" class="form-control" value="<notempty name='goodsInfo.goods_sku'>{$goodsInfo.goods_sku}</notempty>">
+						</div>
+					</div>
+
+
+					<div class="form-group">
+							商品分类:
+						<div>
+							<select name="cat_id" id="cat_id">
+								<option value="0">请选择分类</option>
+								<volist name="catList" id="vo">
+									<option value="{$vo.cat_id}"
+									<eq name="vo.cat_id" value="$goodsInfo.cat_id">selected</eq> >{$vo.cat_name}</option>
+								</volist>
+							</select>
+						</div>
+					</div>
+
+
+					<hr>
+					<div class="form-group" style="border:1px dashed #ccc;padding: 20px 0 20px 0;">
+						<h5>商品参数表:</h5>
+						<!--
+						<div id="spots">
+							<input type="button" id="add" name="add" value="add" /><br />
+							<input type="text" name="parameter_name[]" value="参数名" />
+							<input type="text" name="parameter_value[]" value="参数信息..." />
+							<input type="button" class="remove" value="Delete" />
+						</div>
+						-->
+						<div id="spots">
+							<input type="button" id="add" name="add" value="add" /><br />
+								<notempty name="goodsInfo2.parameter">
+									<volist name="goodsInfo2.parameter" item="voo" id="vvo" key="key">
+										<input type="text" name="parameter_name[]" value="<php>echo $goodsInfo2['parameter_name2'][$key-1];</php>" />
+										<input type="text" style="width: 400px" name="parameter_value[]" value="<php>echo $goodsInfo2['parameter_value2'][$key-1];</php>" /><br>
+									</volist>
+								</notempty>
+							<!--<input type="button" class="remove" value="Delete" />-->
+						</div>
+
+                            <!--	<input type="button" name="Submit" value="Submit" id="send" />-->
+					</div>
+					<hr>
+
+					<!--编辑器-->
+					<div class="editor">
+						<include file="Goods/_editor" />
+						商品描述:
+						<script type="text/plain" id="myEditor2" name="goods_desc">{$goodsInfo.goods_desc}</script>
+						商品参数:
+						<script type="text/plain" id="myEditor" name="goods_performance">{$goodsInfo.goods_performance}</script>
+					</div>
+					<div class="form-group">
+							是否显示:
+						<div>
+							<input type="radio" name="is_show" value="1"<eq name="goodsInfo.is_show" value="1"> </eq> checked="checked">是
+							<input type="radio" name="is_show" value="0" <eq name="goodsInfo.is_show" value="0"></eq> >否
+						</div>
+					</div>
+					<hr>
+					<div class="form-group">
+						<div>
+							<!--
+							<input type="radio" name="hot" value="2"<eq name="goodsInfo.hot" value="2"> </eq> checked="checked">YES
+							<input type="radio" name="hot" value="3" <eq name="goodsInfo.hot" value="3"></eq> >NO
+							-->
+							目前热销状态:
+							<font style="color:red;font-size:16px;">{$goodsInfo.hot}!</font>
+							<br>
+							修改状态：
+						<select name="hot">
+							<option value="no" <eq name="goodsInfo.is_show" value="no">selected</eq>>否</option>
+							<option value="yes" <eq name="goodsInfo.is_show" value="yes">selected</eq>>是</option>
+						</select>
+
+						</div>
+					</div>
+					<div class="form-group">
+						<div>
+							<input type="submit" value="{$actInfo}" class="btn btn-primary">
+						</div>
+					</div>
+					<!--<input type="hidden" name="goods_id" value="<notempty name="goodsInfo.goods_id">{$goodsInfo.goods_id}</notempty>">-->
+					<input type="hidden" name="goods_id" value="{$goodsInfo.goods_id}">
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--点击添加参数表-->
+	<script type="text/javascript">
+        function add1(){
+            var input1 = document.createElement('input');
+            input1.setAttribute('type', 'file');
+            input1.setAttribute('name', 'organizers[]');
+            input1.setAttribute('class', 'git');
+
+            var btn1 = document.getElementById("org");
+            btn1.insertBefore(input1,null);
+        }
+	</script>
+
+	<script type="text/javascript">
+		function add2(){
+			var input2 = document.createElement('input');
+			input2.setAttribute('type', 'text');
+            input2.setAttribute('value', 'text');
+			input2.setAttribute('name', 'organizers[]');
+			input2.setAttribute('class', 'git');
+
+			var btn1 = document.getElementById("org2");
+			btn1.insertBefore(input2,null);
+		}
+	</script>
+
+<!--点击添加参考框-->
+<script type="text/javascript">
+    $(document).ready(function(){
+        var spotMax = 20;
+        if($('div.spot').size() >= spotMax) {$(obj).hide();}
+        $("input#add").click(function(){     addSpot(this, spotMax);
+        });
+    });
+
+    function addSpot(obj, sm) {
+        $('div#spots').append(
+            '<div class="spot">' +
+            '<input type="text" name="parameter_name[]" value="参数名" /> ' +
+            '<input type="text" style="width: 400px"  name="parameter_value[]" value="参数信息..." />  ' +
+            '<input type="button" class="remove" value="Delete" /></div>')
+            .find("input.remove").click(function(){
+            $(this).parent().remove();
+            $('input#add').show();
+        });
+
+        if($('div.spot').size() >= sm) {$(obj).hide();}
+    };
+</script>
+
+<script>
+    $('#send').click(function(){
+        alert('Demonstration Only: submit disabled');
+    });
+</script>
+
+<!-- 商品名称不能为空 -->
+<script type="text/javascript">
+    function validate_required(field,alerttxt)
+    {
+        with (field)
+        {
+            if (value==null||value=="")
+            {alert(alerttxt);return false}
+            else {return true}
+        }
+    }
+    function validate_form(thisform)
+    {
+        with (thisform)
+        {
+            if (validate_required(goods_name,"商品名称不能为空")==false)
+            {goods_name.focus();return false}
+            if (validate_required(goods_name,"商品图片不能为空")==false)
+            {goods_name.focus();return false}
+
+        }
+    }
+</script>
+
+
+

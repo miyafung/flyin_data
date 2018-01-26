@@ -1,0 +1,67 @@
+<div id="content-header">
+	<div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 添加友情链接</a> <a href="#" class="current">添加友情链接</a> </div>
+	<h1>添加友情链接</h1>
+</div>
+
+
+			<!-- 添加链接表单 -->
+			<form action="__CONTROLLER__/ADD" method="post" enctype="multipart/form-data">
+				<table>
+					<tr>
+						<!-- 输入链接名称 -->
+						<th>链接名称:</th>
+						<td><input type="text" name="linkname" class="add_link_inp" /></td>
+					</tr>
+
+					<tr>
+						<!-- 输入链接URL -->
+						<th>链接URL:</th>
+						<td><input type="text" name="url" class="add_link_inp" /></td>
+					</tr>
+					<tr>
+
+					</tr>
+						<tr>
+							<!-- 设置链接的显示顺序 -->
+							<th>显示顺序: </th>
+							<td><input type="number" name="linkorder" class="add_link_inp" /></td>
+						</tr>
+					<tr>
+						<!-- 设置是否前台显示 -->
+						<th>是否显示:</th>
+						<td>
+							<input type="radio" name="isshow" value="1" />是
+							<input type="radio" name="isshow" value="0" checked />否
+						</td>
+					</tr>
+
+					<!-- 选择链接方式 -->
+					<tr>
+						<th>链接方式:</th>
+						<td>
+							<select name="linktype" style="height:25px;width:150px;">
+								<option value="1" selected>新窗口打开</option>
+								<option value="2">当前窗口打开</option>
+								<option value="3">父级窗口打开</option>
+								<option value="4">顶级窗口打开</option>
+							</select>
+						</td>
+					</tr>
+
+
+					<!-- 输入链接网站的描述说明 -->
+					<tr>
+						<th>链接介绍:</th>
+						<td colspan="3"><textarea name="introduction" cols="80" rows="4"></textarea></td>
+					</tr>
+
+					<!-- 添加链接的提交按钮 -->
+					<tr>
+						<td colspan="4" style="height:80px;line-height:80px;text-align:center;"><input type="submit" value="添加链接" id="add_link_btn" style="color:#d39c59;"/></td>
+					</tr>
+				</table>
+			</form>
+		</center>
+
+
+

@@ -1,0 +1,57 @@
+<!--载入头部导航文件-->
+<!--
+<include file="Header/index" />
+
+<link rel="stylesheet" href="__PUBLIC__/Home/css/bootstrap.min.css"/>
+<script src="__PUBLIC__/Home/js/jquery.js"></script>
+<input type="hidden" id="cur_control" name="cur_control" value="{$Think.CONTROLLER_NAME}">
+<link rel="stylesheet" href="__PUBLIC__/Home/css/home.css"><!--/*自动隐藏文字 文字隐藏后添加省略号*/-->
+-->
+<!-- End Home -->
+<div class="clearfix"></div>
+
+<div class="container" style="margin-top: 100px;">
+    <div class="row">
+        <div class="col-xs-3 visible-lg ">
+            <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="125">
+                <li class="active" style="text-align: center"><a href="#section-1"><h4>Product</h4></a></li>
+
+                <volist name="catList" id="vo">
+                    <li><a href="{:U('Category/view?cat_id=' . $vo['cat_id'])}">{$vo.cat_name}</a></li>
+                </volist>
+            </ul>
+        </div>
+        <div class="col-md-9 ">
+            <volist name="goodssearch" id="vo">
+                <div class="col-xs-6 col-md-6" >
+                    <a href="" class="thumbnail">
+                        <img style="width:200px;height: 200px" src="<notempty name='vo.img_center'>__PUBLIC__/Uploads/products/center/{$vo.img_center}</notempty>" alt="">
+                    </a>
+                    <div class="caption">
+                        <h5 class="jieduan">{$vo.goods_name}</h5>
+                    </div>
+                    <p>
+                        <span class="text-info">价格：</span>￥{$vo.goods_price}
+                    </p>
+                    <p>
+                        <button class="btn btn-primary">立即购买</button>
+                        <a class="btn btn-info" href="{:U('Goods/view?cat_id=' . $vo['cat_id'] . '&goods_id=' . $vo['goods_id'])}">查看详情</a>
+                    </p>
+                </div>
+            </volist>
+        </div>
+    </div>
+</div>
+
+<!-- 放大镜图片切换 -->
+<script>
+    $(function(){
+        var curControl = $("#cur_control").val();
+        $("#son_nav li").each(function(){
+            var re = new RegExp( "\\b" + curControl + "\\b" );
+            if ( re.test( $(this).find("a").attr("href") ) ) {
+                $(this).addClass("active").siblings("li").removeClass("active");
+            }
+        });
+    });
+</script>

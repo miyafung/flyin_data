@@ -1,0 +1,5 @@
+/** 百度地图样式 START **/
+#l-map{height:300px;width:100%;}
+#r-result,#r-result table{width:100%; clear:both;}
+#routePanel p{float:left;}
+/** 百度地图样式 END **/

@@ -1,0 +1,30 @@
+<!--
+<script src="__PUBLIC__/Home/js/jquery-v1.10.2.min.js" type="text/javascript"></script>
+-->
+
+    <script>
+        /***修改jQuery写法
+        $(document).ready(function(){
+            $('.flicker-example').flicker();
+        });
+        **/
+        jQuery(document).ready(function($){
+            $('.flicker-example').flicker();
+        });
+    </script>
+
+
+<div class="flicker-example" data-block-text="false">
+    <ul>
+        <volist name="bannerdata" id="bn">
+            <li data-background="__PUBLIC__/Uploads/banner/yuan/{$bn.thumb}">
+                <div class="flick-title">{$bn.banner_name}</div>
+                <div class="flick-sub-text">
+                    {$bn.desc}
+                </div>
+            </li>
+        </volist>
+    </ul>
+</div>
+
+

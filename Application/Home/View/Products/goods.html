@@ -1,0 +1,203 @@
+<div class="pd_con">
+
+    <div class="now_cat">当前位置：<foreach name="path" item="v">&nbsp;<a
+            href="{:U('Products/index',array('cid'=>$v['id']))}">{$v.name}</a>&nbsp;&gt;</foreach>&nbsp;{$goods.name}</div>
+
+    <div class="box">
+        <div class="tb-booth tb-pic tb-s310">
+            <empty name="goods.thumb">
+                <img src="__PUBLIC__/Common/img/preview2.jpg" />
+                <else/>
+                <a href="__PUBLIC__/Uploads/big/{$goods.thumb}">
+                    <img src="__PUBLIC__/Uploads/big/{$goods.thumb}" rel="__PUBLIC__/Uploads/big/{$goods.thumb}" class="jqzoom" />
+                </a>
+            </empty>
+        </div>
+
+
+        <ul class="tb-thumb" id="thumblist">
+            <li class="tb-selected">
+                <div class="tb-pic tb-s40">
+                    <a href="#">
+                        <empty name="goods.thumb">
+                            <img src="__PUBLIC__/Common/img/preview2.jpg" />
+                            <else/>
+                            <a href="#">
+                            <img src="__PUBLIC__/Uploads/big/{$goods.thumb}" mid="__PUBLIC__/Uploads/big/{$goods.thumb}" big="__PUBLIC__/Uploads/big/{$goods.thumb}"/>
+                            </a>
+                    </empty>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="pd_shuoming">
+        <b>{$goods.name}</b>
+        <h4>Flyin Optronics’ Coarse wavelength division multiplexer (CWDM) utilizes thin film coating technology and proprietary design of non-flux metal bonding micro optics packaging. It provideslow insertion loss, high channel isolation, wide pass band, low temperature sensitivity and epoxy free optical path .</h4>
+        <div class="pd_parameter">
+            <div class="pd_leftPar">Channel Spacing：</div>
+            <div class="pd_rightPar"><p><span></span>CWDM Grid</p></div>
+        </div>
+
+
+        <div class="pd_parameter">
+            <div class="pd_leftPar">Pass Channel：</div>
+            <div class="pd_rightPar">
+                <p class="pd_more">1270nm</p>
+                <p class="pd_more">1290nm</p>
+                <p class="pd_more">1310nm</p>
+                <p class="pd_more">1330nm</p>
+            </div>
+        </div>
+        <?php
+            include('../../common/enInquireNow.php');               //引入客户询盘按钮
+        ?>
+
+    </div>
+</div>
+
+<div class="pd_line">
+    <p>Description</p>
+    <p>Parameters</p>
+    <p>PDF</p>
+</div>
+
+<div class="pd_box">
+    <p>{$goods.desc}</p>
+    <dl class="tedian">
+        <dt>Features</dt>
+        <dd>Low Insertion Loss</dd>
+        <dd>Wide pass band</dd>
+        <dd>High Channel Isolation</dd>
+        <dd>High Stability and reliability</dd>
+        <dd>Epoxy-free on Optical Path</dd>
+    </dl>
+    <dl class="tedian">
+        <dt>Applications</dt>
+        <dd>Line Monitoring</dd>
+        <dd>WDM Network</dd>
+        <dd>Telecommunication</dd>
+        <dd>Cellular Application</dd>
+        <dd>Fiber Optical amplifier</dd>
+        <dd>Acess Network</dd>
+    </dl>
+
+
+    <div class="pd_chicun">
+        <h3>Package Dimension</h3>
+        <img src="../../images/package/pd_CWDM1.png"/>
+    </div>
+    <!--以下插入工厂车间展示图文件-->
+    <?php
+        include('../../common/enPicturesPhoto.php');
+    ?>
+
+</div>
+<div class="pd_box">
+    <h3 class="pd_title">Performance Specifications</h3>
+    <table cellspacing="0" cellpadding="0">
+        <tr class="f1">
+            <td colspan="2">Parameter</td>
+            <td>Specification</td>
+        </tr>
+        <tr>
+            <td colspan="2">Channel Wavelength (nm)</td>
+            <td class="e2">1270~1610 or 1271~1611</td>
+        </tr>
+        <tr>
+            <td colspan="2">Channel Spacing（nm）</td>
+            <td class="e2">20</td>
+        </tr>
+        <tr>
+            <td colspan="2">Channel Passband (@-0.5dB bandwidth (nm)</td>
+            <td class="e2">>13</td>
+        </tr>
+        <tr>
+            <td colspan="2">Pass Channel Insertion Loss (dB)</td>
+            <td class="e2">≤0.6</td>
+        </tr>
+        <tr>
+            <td colspan="2">Reflection Channel Insertion Loss (dB)</td>
+            <td class="e2">≤0.4</td>
+        </tr>
+        <tr>
+            <td colspan="2">Channel  Ripple (dB)</td>
+            <td class="e2"><0.3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Isolation (dB)</td>
+            <td>Adjacent</td>
+            <td class="e2">≥30</td>
+        </tr>
+        <tr>
+            <td>Non-adjacent</td>
+            <td class="e2">≥40</td>
+        </tr>
+        <tr>
+            <td colspan="2">Inertion Loss Temperature Sensitivity (dB/℃)</td>
+            <td class="e2"><0.005</td>
+        </tr>
+        <tr>
+            <td colspan="2">Wavelength Temperature Shifting (nm/℃)</td>
+            <td class="e2"><0.002</td>
+        </tr>
+        <tr>
+            <td colspan="2">Polarization Dependent Loss (dB)</td>
+            <td class="e2"><0.1</td>
+        </tr>
+        <tr>
+            <td colspan="2">Polarization Mode Dispersion（ps）</td>
+            <td class="e2"><0.1</td>
+        </tr>
+        <tr>
+            <td colspan="2">Directivity (dB)</td>
+            <td class="e2">＞50</td>
+        </tr>
+        <tr>
+            <td colspan="2">Return Loss（dB）</td>
+            <td class="e2">＞45</td>
+        </tr>
+        <tr>
+            <td colspan="2">Maximum Power Handling (mW)</td>
+            <td class="e2">300</td>
+        </tr>
+        <tr>
+            <td colspan="2">Opterating Temperature (℃)</td>
+            <td class="e2" colspan="4">-20~+75</td>
+        </tr>
+        <tr>
+            <td colspan="2">Storage Temperature (℃)</td>
+            <td class="e2">-40~+85</td>
+        </tr>
+        <tr>
+            <td class="e1" colspan="2">Package dimension (mm)</td>
+            <td class="e1 e2">Φ5.5xL34</td>
+        </tr>
+    </table>
+
+    <div class="beizhu">
+        <p>1、Above specifications are for devices without connector.</p>
+        <p>2、Specifications may change without notice.</p>
+    </div>
+</div>
+
+<!--pdf文件下载-->
+<div class="pd_box">
+    <?php
+        include('../../common/enBack/enDownLoad.php');               //下载版块头部提示
+    ?>
+    <empty name="goods.pdfthumb">
+        暂时没有PDF
+        <else/>
+        <a href="__PUBLIC__/Uploads/pdf/{$goods.pdfthumb}" TARGET="_blank">
+            <img src="__PUBLIC__/Homee/images/pdf.icon.gif" border="0"/> {$goods.name}.pdf
+        </a>
+    </empty>
+
+   <!-- <a href="../../pdf/Flyin 1x2 CWDM Device 3 ports.pdf" target="_blank">
+        <img src="../../images/pdf.icon.gif" alt="1x2 CWDM single component(3 ports)" border="0"> 1x2 CWDM Device(3 Ports)</a>-->
+</div>
+
+<!--放大镜特效在timer.js-->

@@ -1,0 +1,70 @@
+
+
+
+<!--面包屑和标题--->
+<div id="content-header">
+    <div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 访客日志</a> <a href="#" class="current">访客日志</a> </div>
+    <h1>访客日志</h1>
+</div>
+
+
+
+<div class="container-fluid">
+    <ul class="stat-boxes2">
+        <li>
+            <div class="right"> 总数<strong>{$count}</strong> </div>
+        </li>
+        <li>
+            <div class="right"> Hot!<strong></strong> </div>
+        </li>
+    </ul>
+    <ul class="stat-boxes2">
+        <li>
+            <div class="right">
+                <h4>日期范围查询</h4>
+                <form action="" method="post">
+                    <input name="datestart" type="date" value="2017-01-01">至
+                    <input name="dateend" type="date" value="2018-01-01">
+                    <button type="submit" class="tip-bottom"><i class="icon-search icon-white"></i></button>
+                    <a href=""  class="btn btn-primary btn-lg">返回列表</a>
+                </form>
+
+            </div>
+        </li>
+    </ul>
+
+
+
+    <div class="row-fluid">
+        <div class="span12">
+        <!--Data Table-->
+         <table class="table table-bordered table-striped">
+                    <thead>
+                    <tr>
+                        <th>IP</th>
+                        <th>国家</th>
+                        <th>地区</th>
+                        <th>isp</th>
+                        <th>访问时间</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <volist name = "dataip" id = "vo" >
+                        <tr>
+                            <td><a href="#" class="btn-link">{$vo.ip}</a></td>
+                            <td>{$vo.country}</td>
+                            <td>{$vo.district}</td>
+                            <td>{$vo.isp}</td>
+                            <td><span class="text-muted"><i class="fa fa-clock-o"></i>{$vo.current_date}</span></td>
+                        </tr>
+                    </volist>
+                    </tbody>
+                </table>
+            <div style="height:40px;">
+                <ul class="pagination" style="float:right; margin:10px 0 0 0; ">
+                    {$page}
+                </ul>
+            </div>
+            </div>
+    </div>
+</div>

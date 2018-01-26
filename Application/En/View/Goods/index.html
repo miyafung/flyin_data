@@ -1,0 +1,106 @@
+
+
+<script>
+    function csubstr2(str,len){
+        if(str.length>10){
+            return str.substring(0,len)+"...";
+        }else{
+            return str;
+        }
+    }
+</script>
+
+<section id="news-section-1" class="property-details padding_top" >
+    <div class="container property-details" style="margin-top: 20px;">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <empty name="goodsList.data"><div class="empty-tip">Not finding the product information you need.</div>
+                        <else/>
+                    <volist name="goodsList.data" id="vo">
+                        <div class="col-sm-6">
+                            <div class="property_item heading_space">
+                                <div class="image">
+                                    <a href="#.">
+                                        <img style="height: 249px;" src="<notempty name='vo.img_center'>__PUBLIC__/Uploads/products/center/{$vo.img_center}</notempty>" alt="{$vo.goods_name}" class="img-responsive">
+                                    </a>
+                                    <div class="price clearfix">
+                                        <span class="tag pull-right">view：{$vo.hits}</span>
+                                    </div>
+                                </div>
+                                <div class="proerty_content">
+                                    <div class="proerty_text">
+                                        <h5 class="captlize">
+                                            <a href="{:U('Goods/view?cat_id=' . $vo['cat_id'] . '&goods_id=' . $vo['goods_id'])}" target="_blank" data-toggle="tooltip" data-placement="right" title="{$vo.goods_name}">
+                                                <script>document.write(csubstr2("{$vo.goods_name}",50));</script>
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div class="favroute clearfix">
+                                        <p class="pull-md-left">{$vo.list_time}<i class="icon-calendar2"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </volist>
+
+                        <!--分页-->
+                        <div class="row margin_bottom">
+                            <div class="col-md-12">
+                                <div class="pagelist">{$goodsList.pagelist}</div>
+                            </div>
+                        </div>
+                    </empty>
+                </div>
+
+
+            </div>
+            <aside class="col-md-4 col-xs-12">
+                <!--这里有个div-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <form class="form-search bottom40" method="get" id="news-search" action="">
+                            <div class="input-append">
+                                <input type="text" class="input-medium search-query" placeholder="Search Here" value="">
+                                <button type="submit" class="add-on"><i class="icon-icons185"></i></button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-md-12">
+                        <!-- 产品导航 START -->
+                        <h3 class="bottom20"> Product Catalog</h3>
+                        <ul class="pro-list bottom20">
+                            <volist name="catList" id="vo">
+                                <li><a href="{:U('Category/view?cat_id=' . $vo['cat_id'])}">{$vo.cat_name}</a></li>
+                            </volist>
+                        </ul>
+                        <!-- 导航 END -->
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5 class="bottom40 margin40">History</h5>
+                    </div>
+                </div>
+                <volist name="historyen" id="v" offset="0" length='5'>   <!--循环出 1-5个 第6个不显示，是以 ul    li  结构构成-->
+                    <div class="row bottom20">
+                        <div class="col-md-4 col-sm-4 col-xs-6 p-image">
+                            <img src="__PUBLIC__/Uploads/products/center/{$v['img_center']}" />
+                        </div>
+                        <div class="col-md-8 col-sm-8 col-xs-6">
+                            <div class="feature-p-text">
+                                <h5>{$v.goods_name}</h5>
+                                <a href="{:U('Goods/view',array('goods_id'=>$v['goods_id']))}">查看</a>
+                            </div>
+                        </div>
+                    </div>
+                </volist>
+            </aside>
+        </div>
+    </div>
+</section>
+
+
+

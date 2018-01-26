@@ -1,0 +1,21 @@
+
+
+<!-- 导航 START -->
+<h3 class="bottom20">服务支持</h3>
+<ul class="pro-list bottom20">
+	<volist name="servicecategory" id="v1" offset="0" length="20">
+	<li>
+		<a href="{:U('Services/index',array('cid'=>$v1['id']))}">{$v1.name}</a>
+		</li>
+		<ul>
+			<present name="v1.child">
+				<foreach name="v1.child" item="v2">
+					<a href="{:U('Services/index',array('cid'=>$v2['id']))}">{$v2.name}</a>
+				</foreach>
+			</present>
+		</ul>
+	</volist>
+</ul>
+<!-- 导航 END -->
+
+

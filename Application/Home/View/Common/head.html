@@ -1,0 +1,29 @@
+<!--购物车模块 START-->
+   <nav class="" role="navigation">
+      <div class="navbar-header">
+         <a class="navbar-brand" href="#">购物车</a>
+      </div>
+      <div id="son_nav">
+         <ul class="nav navbar-nav">
+         	<volist name="catList" id="vo">
+            	<li><a href="{:U('Category/view?cat_id=' . $vo['cat_id'])}">{$vo.cat_name}</a></li>
+            </volist>
+
+         </ul>
+      </div>
+   </nav>
+   <input type="hidden" id="cur_control" name="cur_control" value="{$Think.CONTROLLER_NAME}">
+</div>
+<!--购物车模块 END-->
+
+<script>
+  $(function(){
+      var curControl = $("#cur_control").val();
+      $("#son_nav li").each(function(){
+         var re = new RegExp( "\\b" + curControl + "\\b" );
+         if ( re.test( $(this).find("a").attr("href") ) ) {
+            $(this).addClass("active").siblings("li").removeClass("active");
+         }
+      });
+  }); 
+</script>

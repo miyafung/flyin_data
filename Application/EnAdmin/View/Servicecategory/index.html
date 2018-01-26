@@ -1,0 +1,40 @@
+<div id="content-header">
+	<div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 服务支持分类</a> <a href="#" class="current">服务支持分类</a> </div>
+	<h1>服务支持分类</h1>
+</div>
+
+<div class="container-fluid">
+	<hr>
+	<div class="row-fluid">
+
+
+<div class="top-button">
+	相关操作：<a href="{:U('Servicecategory/add')}"class="btn btn-primary btn-lg">添加方案服务分类</a>
+</div>
+
+
+	<table  class="table table-bordered table-hover table-striped">
+		<tr><th>服务支持分类名称</th><th>操作</th></tr>
+		<foreach name="servicecategory" item="v">
+			<tr><td>{:str_repeat('— ',$v['level'])}{$v.name}</td><td><a href="{:U('Servicecategory/edit',array('id'=>$v['id']))}">修改</a>　<a href="#" class="act-del" data-id="{$v.id}" >删除</a></td></tr>
+		</foreach>
+	</table>
+
+
+
+		</div>
+</div>
+<form method="post" id="form">
+	<input type="hidden" name="id" id="target_id">
+</form>
+
+
+<script>
+	//删除
+	$(".act-del").click(function(){
+		if(confirm('确定要删除吗？（该分类下的Service将归于未分类）')){
+			$("#target_id").val($(this).attr("data-id"));
+			$("#form").attr("action","{:U('Servicecategory/del')}").submit();
+		}
+	});
+</script>

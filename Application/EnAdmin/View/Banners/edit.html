@@ -1,0 +1,72 @@
+<!--面包屑和标题--->
+<div id="content-header">
+	<div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> banner</a> <a href="#" class="current">修改banner</a> </div>
+	<h1>修改banner</h1>
+</div>
+
+
+<div class="container-fluid">
+	<hr>
+	<div class="row-fluid">
+		<div class="span12">
+
+			<div class="top-button">
+				修改banner分类：<select id="bannercategory">
+					<option value="0">未分类</option>
+					<foreach name="bannercategory" item="v">
+						<option value="{$v.id}" <eq name="v.id" value="$cid">selected</eq>>{:str_repeat('— ',$v['level'])}{$v.name}</option>
+					</foreach>
+				</select>
+				<a href="{:U('Banners/index',array('cid'=>$cid,'p'=>$p))}" class="btn btn-primary">返回banner列表</a>
+			</div>
+			<present name="success"><div class="mssage">修改成功。</div></present>
+			<div class="list auto">
+				<form method="post" enctype="multipart/form-data">
+				<input type="hidden" name="id" value="{$banners.id}">
+				<table class="t2 t4">
+					<tr><th>banner名称：</th><td><input type="text" name="banner_name" value="{$banners.banner_name}" class="big"></td></tr>
+					<tr><th>banner排序：</th><td><input type="text" name="sn" value="{$banners.rank}" ></td></tr>
+					<tr><th>banner编号：</th><td><input type="text" name="sn" value="{$banners.sn}" ></td></tr>
+					<tr><th>是否上线：</th><td><select name="on_sale">
+						<option value="yes" <eq name="banners.on_sale" value="yes">selected</eq>>是</option>
+							<option value="no" <eq name="banners.on_sale" value="no">selected</eq>>否</option>
+					</select></td></tr>
+					<tr><th>首页推荐：</th><td><select name="recommend">
+						<option value="yes" <eq name="banners.recommend" value="yes">selected</eq>>是</option>
+						<option value="no" <eq name="banners.recommend" value="no">selected</eq>>否</option>
+					</select></td></tr>
+					<tr><th>修改banner：</th><td><input type="file" name="thumb" /></td></tr>
+					<tr><th>当前banner：</th><td>
+						<empty name="banners.thumb">
+							<img src="__PUBLIC__/Common/img/preview.jpg">
+						<else/>
+							<img src="__PUBLIC__/Uploads/banner/small/{$banners.thumb}">
+						</empty>
+					</td>
+					</tr>
+				</table>
+
+
+				<div class="editor">
+					<include file="Banners/_editor" />
+					<script type="text/plain" id="myEditor" name="desc">{$banners.desc}</script>
+				</div>
+
+				<div>
+					<input class="btn btn-primary" type="submit" value="保存修改">
+					<input class="btn btn-primary" type="submit" value="修改并返回" name="return">
+				</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<script>
+	//下拉菜单跳转 选择目录切换
+	$("#bannercategory").change(function(){
+		var url = "{:U('Banners/edit',array('id'=>$id,'cid'=>'_ID_','p'=>$p))}";
+		location.href = url.replace("_ID_",$(this).val());
+	});
+</script>

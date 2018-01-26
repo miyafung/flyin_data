@@ -1,0 +1,52 @@
+[ 2017-12-31T19:36:55+08:00 ] 112.5.203.167 /admin/phpMyAdmin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000746s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000954s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001661s ]
+ERR: 无法加载控制器:PhpMyAdmin
+NOTIC: [2] include(): Filename cannot be empty /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Filename cannot be empty /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening '' for inclusion (include_path='.:/usr/local/php53/lib/php') /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2017-12-31T20:08:07+08:00 ] 95.215.62.76 //admin/scripts/setup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+ERR: 无法加载控制器:Scripts
+NOTIC: [2] include(): Filename cannot be empty /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Filename cannot be empty /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening '' for inclusion (include_path='.:/usr/local/php53/lib/php') /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2017-12-31T20:08:07+08:00 ] 95.215.62.76 //admin/pma/scripts/setup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001096s ]
+ERR: 无法加载控制器:Pma
+NOTIC: [2] include(): Filename cannot be empty /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Filename cannot be empty /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening '' for inclusion (include_path='.:/usr/local/php53/lib/php') /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2017-12-31T20:08:08+08:00 ] 95.215.62.76 //admin/phpmyadmin/scripts/setup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000984s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001692s ]
+ERR: 无法加载控制器:Phpmyadmin
+NOTIC: [2] include(): Filename cannot be empty /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Filename cannot be empty /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening '' for inclusion (include_path='.:/usr/local/php53/lib/php') /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+

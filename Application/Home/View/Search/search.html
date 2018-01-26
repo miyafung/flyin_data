@@ -1,0 +1,177 @@
+<!--载入头部导航文件-->
+<!--
+<include file="Header/index" />
+<link rel="stylesheet" href="__PUBLIC__/Home/css/bootstrap.min.css"/>
+<script src="__PUBLIC__/Home/js/jquery.js"></script>
+<input type="hidden" id="cur_control" name="cur_control" value="{$Think.CONTROLLER_NAME}">
+-->
+
+<!-- End Home -->
+<div class="clearfix"></div>
+<div class="container" style="margin-top: 100px;">
+    <div class="row">
+        <!-- News Start -->
+        <div class="col-md-12" >
+            匹配信息总数：<span id="allsore"></span></a></li>
+            <ul id="myTab" class="nav nav-tabs">
+                <li class="active"><a href="#goods_list" data-toggle="tab">产品  <span id="goodssore"></span></a></li>
+                <li><a href="#news_list" data-toggle="tab">新闻 <span id="newssore"></span></a></li>
+                <li><a href="#service_list" data-toggle="tab">服务支持<span id="servicesore"></span></a></li>
+            </ul>
+            <div id="myTabContent" class="tab-content  allli" style="padding-top:10px; ">
+                <!--//产品-->
+                <div class="tab-pane fade in active" id="goods_list">
+                    <section class="property-details">
+                        <div class="container property-details">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <empty name="goodssearch"><div class="empty-tip">没有找到您需要的信息。</div>
+                                            <else/>
+                                            <ul class="br2">
+                                            <volist name="goodssearch" id="vo">
+                                                    <li>
+                                                <div class="news-1-box clearfix">
+                                                    <div class="col-md-2 col-sm-2 hidden-xs">
+                                                        <div class="image-2">
+                                                            <a href="">
+                                                                <img src="<notempty name='vo.img_center'>__PUBLIC__/Uploads/products/center/{$vo.img_center}</notempty>" alt=""class="img-responsive">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <!--产品-->
+                                                    <div class="col-md-10 col-sm-10 col-xs-12 padding-left-25">
+                                                        <h5><a href="{:U('Goods/view?cat_id=' . $vo['cat_id'] . '&goods_id=' . $vo['goods_id'])}" target="_blank"> {$vo.goods_name}</a></h5>
+                                                        <div class="news-details padding-b-10 margin-t-5">
+                                                            <span><i class="icon-icons230"></i>{$vo.goods_name}</span>
+                                                        </div>
+                                                        <p class="p-font-15">
+                                                            <script>document.write(csubstr("{$vo.goods_name}",100));</script>
+                                                        </p>
+                                                        <div class="pro-3-link padding-t-20">
+                                                            <a class="btn-more" href="{:U('Category/view?cat_id=' . $vo['cat_id'])}" target="_blank">
+                                                                <i><img alt="arrow" src="__PUBLIC__/Home/images/arrowl.png"></i><span>来自：【产品】{$vo.cat_name}</span><i> <img alt="arrow" src="__PUBLIC__/Home/images/arrowr.png"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                    </li>
+                                                <hr>
+                                            </volist>
+                                            </ul>
+                                        </empty>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!--新闻-->
+                <div class="tab-pane fade" id="news_list">
+                    <section class="property-details">
+                        <div class="container property-details">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <empty name="newssearch"><div class="empty-tip">没有找到您需要的信息。</div>
+                                            <else/>
+                                            <ul class="xinwen">
+                                                <volist name="newssearch" id="newvo">
+                                                    <li>
+                                                        <div class="news-1-box clearfix">
+                                                            <div class="col-md-2 col-sm-2 hidden-xs">
+                                                                <div class="image-2">
+                                                                    <a href=""> <img src="__PUBLIC__/Uploads/news/small/{$newvo.thumb}"  class="img-responsive"></a>
+                                                                </div>
+                                                            </div>
+                                                            <!--新闻-->
+                                                            <div class="col-md-10 col-sm-10 col-xs-12 padding-left-25">
+                                                                <h5><a href="{:U('News/news',array('id'=>$newvo['id']))}" target="_blank">{$newvo.name}</a></h5>
+                                                                <div class="news-details padding-b-10 margin-t-5">
+                                                                    <span><i class="icon-icons230"></i>{$newvo.name}</span>
+                                                                </div>
+                                                                <div class="pro-3-link padding-t-20">
+                                                                    <a class="btn-more" href="{:U('News/index',array('cid'=>$newvo['newcategory_id'],'id'=>$newvo['id']))}" target="_blank">
+                                                                        <i><img alt="arrow" src="__PUBLIC__/Home/images/arrowl.png"></i><span>类目：【新闻】{$newvo.newcategory_id}</span><i> <img alt="arrow" src="__PUBLIC__/Home/images/arrowr.png"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <hr>
+                                                </volist>
+                                            </ul>
+                                        </empty>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!--方案支持-->
+                <div class="tab-pane fade" id="service_list">
+                    <section class="property-details">
+                        <div class="container property-details">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div>
+                                        <empty name="servicessearch"><div class="empty-tip">没有找到您需要的信息。</div>
+                                            <else/>
+                                            <ul class="fuwu">
+                                                <volist name="servicessearch" id="servicevo">
+                                                    <li>
+                                                        <div class="news-1-box clearfix">
+                                                            <!--方案支持-->
+                                                            <div class="col-md-12 col-sm-12 col-xs-12 padding-left-25">
+                                                                <h5><a href="{:U('Services/services',array('id'=>$servicevo['id'],'cid'=>$servicevo['servicecategory_id']))}" target="_blank">{$servicevo.name}</a></h5>
+                                                                <div class="news-details padding-b-10 margin-t-5">
+                                                                    <span><i class="icon-icons230"></i>{$servicevo.name}</span>
+                                                                </div>
+                                                                <p class="p-font-15">
+                                                                    <script>document.write(csubstr("{$servicevo.name}",100));</script>
+                                                                </p>
+                                                                <div class="pro-3-link padding-t-20">
+                                                                    <a class="btn-more" href="{:U('Services/index',array('cid'=>$servicevo['servicecategory_id'],'id'=>$servicevo['id']))}" target="_blank">
+                                                                        <i><img alt="arrow" src="__PUBLIC__/Home/images/arrowl.png"></i><span>类目：【服务支持】{$servicevo.servicecategory_id}</span><i> <img alt="arrow" src="__PUBLIC__/Home/images/arrowr.png"></i>
+                                                                    </a>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <hr>
+                                                </volist>
+                                            </ul>
+                                        </empty>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <script>
+                $(function () {
+                    $('#myTab li:eq(0) a').tab('show');
+                });
+            </script>
+        </div>
+        <!-- News End -->
+    </div>
+</div>
+
+
+<!-- 页面 数量个数计算 -->
+<script  language="javascript" type="text/javascript">
+    $(document).ready(function(){
+        var j=$('.br2 li').size();//获得class为mm的font标签的数目      banner部分
+        var aa=$('.allli li').size();//获得class为mm的li标签的数目
+        var g=$('.xinwen li').size();//获得class为mm的font标签的数目     新闻部分
+        var x=$('.fuwu li').size();//获得class为mm的font标签的数目     方案部分
+        $('#allsore').html(aa);
+        $('#goodssore').html(j);
+        $('#newssore').html(g);
+        $('#servicesore').html(x);
+    })
+</script>

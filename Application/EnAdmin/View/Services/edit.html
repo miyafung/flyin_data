@@ -1,0 +1,66 @@
+<!--面包屑和标题--->
+<div id="content-header">
+	<div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 服务</a> <a href="#" class="current">修改服务</a> </div>
+	<h1>修改服务</h1>
+</div>
+
+
+<div class="container-fluid">
+	<hr>
+	<div class="row-fluid">
+		<div class="span12">
+
+			<div class="top-button">
+				修改服务分类：<select id="servicecategory">
+				<option value="0">未分类</option>
+				<foreach name="servicecategory" item="v">
+					<option value="{$v.id}" <eq name="v.id" value="$cid">selected</eq>>{:str_repeat('— ',$v['level'])}{$v.name}</option>
+				</foreach>
+			</select>
+				<a href="{:U('Services/index',array('cid'=>$cid,'p'=>$p))}" class="btn btn-primary">返回服务列表</a>
+			</div>
+<present name="success"><div class="mssage">修改成功。</div></present>
+<div class="list auto">
+	<form method="post" enctype="multipart/form-data">
+	<input type="hidden" name="id" value="{$services.id}">
+	<table class="t2 t4">
+		<tr><th>服务名称：</th><td><input type="text" name="name" value="{$services.name}" class="big"></td></tr>
+		<tr><th>服务编号：</th><td><input type="text" name="sn" value="{$services.sn}" ></td></tr>
+		<tr><th>是否上线：</th><td><select name="on_sale">
+			<option value="yes" <eq name="services.on_sale" value="yes">selected</eq>>是</option>
+				<option value="no" <eq name="services.on_sale" value="no">selected</eq>>否</option>
+		</select></td></tr>
+		<tr><th>首页推荐：</th><td><select name="recommend">
+			<option value="yes" <eq name="services.recommend" value="yes">selected</eq>>是</option>
+			<option value="no" <eq name="services.recommend" value="no">selected</eq>>否</option>
+		</select></td></tr>
+		<tr><th>修改日期date：</th><td><input type="date" name="date" value="{$services.date}" /></td></tr>
+
+
+	</table>
+
+
+	<div class="editor">
+		<include file="Services/_editor" />
+		<script type="text/plain" id="myEditor" name="desc">{$services.desc}</script>
+	</div>
+	<div>
+		<input class="btn btn-primary" type="submit" value="保存修改">
+		<input class="btn btn-primary" type="submit" value="修改并返回" name="return">
+	</div>
+	</form>
+</div>
+
+
+
+		</div>
+	</div>
+</div>
+
+<script>
+    //下拉菜单跳转 选择目录切换
+    $("#servicecategory").change(function(){
+        var url = "{:U('Services/edit',array('id'=>$id,'cid'=>'_ID_','p'=>$p))}";
+        location.href = url.replace("_ID_",$(this).val());
+    });
+</script>t>

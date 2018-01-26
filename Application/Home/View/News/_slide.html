@@ -1,0 +1,30 @@
+<!-- 导航 START -->
+	<h3 class="bottom20">新闻</h3>
+	<ul class="pro-list bottom20">
+		<volist name="newcategory" id="v1" offset="0" length="20">
+			<li>
+				<a href="{:U('News/index',array('cid'=>$v1['id']))}">{$v1.name}</a>
+			</li>
+			<ul>
+				<present name="v1.child">
+					<foreach name="v1.child" item="v2">
+						<a href="{:U('News/index',array('cid'=>$v2['id']))}">{$v2.name}</a>
+					</foreach>
+				</present>
+			</ul>
+		</volist>
+	</ul>
+<!-- 导航 END -->
+
+<script>
+    //产品分类页面左侧导航
+    $('.pc_box .subnav .subline').click(function(){
+        $(this).css({"background-color": "#afafaf"});
+        $('.pc_box .subnav ul').eq($(this).index()/2).removeClass("menu_chioce");
+        $('.subnav ul li img').attr("src","up_icon.png");
+        $('.pc_box .subnav ul').eq($(this).index()/2).find('img').attr("src","down_icon.png");
+        $('.menu_chioce').slideUp();
+        //$('.pc_box .subnav ul').eq($(this).index()/2).slideToggle();
+        $('.pc_box .subnav ul').eq($(this).index()/2).addClass("menu_chioce");
+    });
+</script>

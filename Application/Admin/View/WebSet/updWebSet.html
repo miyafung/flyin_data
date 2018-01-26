@@ -1,0 +1,98 @@
+
+<div id="content-header">
+	<div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 配置修改</a> <a href="#" class="current">配置修改</a> </div>
+	<h1>配置修改</h1>
+</div>
+
+
+<div class="container-fluid">
+	<hr>
+	<div class="row-fluid">
+		<div class="span12">
+
+<form action="__CONTROLLER__/upd/id/{$setup.id}" method="post" enctype="multipart/form-data">
+				<table class="table table-bordered table-striped">
+					<tr>
+						<th>网站标题 :</th>
+						<td><textarea name="title" id="" cols="80" rows="3">{$setup.title}</textarea></td>
+					</tr>
+					<tr>
+						<th>网站版权 :</th>
+						<td><textarea name="copy" id="" cols="80" rows="3">{$setup.copy}</textarea></td>
+					</tr>
+
+
+
+
+					<tr>
+						<th>公司地址:</th>
+						<td><textarea name="address" id="" cols="80" rows="3">{$setup.address}</textarea></td>
+					</tr>
+					<tr>
+						<th>联系人:</th>
+						<td><textarea name="linkman" id="" cols="80" rows="3">{$setup.linkman}</textarea></td>
+					</tr>
+					<tr>
+						<th>手机:</th>
+						<td><textarea name="cellphone" id="" cols="80" rows="3">{$setup.cellphone}</textarea></td>
+					</tr>
+					<tr>
+						<th>电话:</th>
+						<td><textarea name="tel" id="tel" cols="80" rows="3">{$setup.tel}</textarea></td>
+					</tr>
+					<tr>
+						<th>传真:</th>
+						<td><textarea name="fax" id="" cols="80" rows="3">{$setup.fax}</textarea></td>
+					</tr>
+					<tr>
+						<th>QQ:</th>
+						<td><textarea name="qq" id="" cols="80" rows="3">{$setup.qq}</textarea></td>
+					</tr>
+					<tr>
+						<th>邮件:</th>
+						<td><textarea name="mail" id="" cols="80" rows="3">{$setup.mail}</textarea></td>
+					</tr>
+
+					<tr>
+						<th>网站Logo :</th>
+						<td>
+							<img src="__PUBLIC__/Common/Uploads/Photos/{$setup.logo}" width="80" height="60" style="margin-right:20px;" />
+							<input type="file" name="logo">
+						</td>
+					</tr>
+					<tr>
+						<th>网站关键字 :</th>
+						<td><textarea name="keywords" id="" cols="80" rows="3">{$setup.keywords}</textarea></td>
+					</tr>
+					<tr>
+						<th>网站描述 :</th>
+						<td><textarea name="description" id="" cols="80" rows="3">{$setup.description}</textarea></td>
+					</tr>
+					<tr>
+						<th>今日搜索 :</th>
+						<td><textarea name="hotsearch" id="" cols="80" rows="3">{$setup.hotsearch}</textarea></td>
+					</tr>
+					<tr>
+						<th>网站作者 :</th>
+						<td><textarea name="author" id="" cols="80" rows="3">{$setup.author}</textarea></td>
+					</tr>
+					<tr>
+						<th>是否启用 :</th>
+						<td style="color:#ff9d59;">
+							<input type="radio" name="status" value="1" <if condition="$setup.status eq 1">checked</if> />是
+							<input type="radio" name="status" value="0" <if condition="$setup.status eq 0">checked</if> />否
+						</td>
+					</tr>
+					<tr>
+						<th></th>
+						<td>
+							<input type="submit" value="修改配置" class="btn btn-primary"/>
+						</td>
+					</tr>
+				</table>
+			</form>
+
+
+		</div>
+	</div>
+</div>

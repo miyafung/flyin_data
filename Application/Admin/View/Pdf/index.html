@@ -1,0 +1,79 @@
+<meta http-equiv="Content-Type" content="text/html" charset="gb2312" >
+<!--面包屑和标题--->
+<div id="content-header">
+    <div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> PDF</a> <a href="#" class="current">PDF速查系统</a> </div>
+    <h1>PDF速查</h1>
+</div>
+
+<div class="container-fluid">
+    <hr>
+    <div class="row-fluid">
+        <div class="span12">
+
+            <!--商品分类-->
+            <a href="{:U('Pdf/orderByName')}" class="btn btn-primary" style="margin-right: 20px;">按照英文字母排序</a>
+
+            <div style="display: inline-block;">
+                <form action="" method="post">
+                    <input type="search" name="keywords"  placeholder="请输入PDF文档名字..." />
+                    <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
+                </form>
+            </div>
+
+
+
+            <!--banner列表-->
+            <div class="widget-box">
+                <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+                    <h5>PDF查询系统 输入关键字</h5>
+                </div>
+                <div class="widget-content nopadding">
+
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>产品名字</th>
+                                <th>文档名字</th>
+                                <th>下载</th>
+
+                            </tr>
+                        </thead>
+                            <foreach name="pdfsearch" item="lk">
+                                <tr>
+                                    <td align="center">{$lk.goods_id}</td>
+                                    <td align="center">{$lk.goods_name}</td>
+                                    <td>
+                                        <a href=" __PUBLIC__/Uploads/pdf/{$lk.goods_pdf}" target="_blank">
+                                            <img src="__PUBLIC__/Home/images/PDF.png" border="0"/>{$lk.goods_pdf}
+                                         </a>
+                                    </td>
+                                    <!--
+
+                                    -->
+                                    <td style="text-align: center;font-size: 14px">
+                                        <a href="{:U('Pdf/downloadFile',array('goods_id'=>$lk['goods_id']))}"><i class="icon-download-alt"></i>  <br> {$lk.pdfhits}</a>
+
+                                        <!-- 下载次数 -->
+                                        <script>
+                                            var ajax;
+                                            if(window.XMLHttpRequest){ ajax = new XMLHttpRequest();}else{ ajax = new ActiveXObject('Microsoft.XMLHTTP');}
+                                            ajax.open('GET','__MODULE__/Pdf/downloadFile/{$_GET['goods_id']}',true);
+                                            ajax.send();
+                                        </script>
+
+
+                                    </td>
+                                </tr>
+                            </foreach>
+
+                    </table>
+                </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+

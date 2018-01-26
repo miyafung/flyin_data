@@ -1,0 +1,85 @@
+<!--面包屑和标题--->
+<div id="content-header">
+	<div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> banner</a> <a href="#" class="current">banner添加</a> </div>
+	<h1>banner添加</h1>
+</div>
+
+<div class="container-fluid">
+	<hr>
+	<div class="row-fluid">
+		<div class="span12">
+
+			<present name="success">
+				<div class="alert alert-success alert-block mssage"> <a class="close" data-dismiss="alert" href="#">×</a>
+					<h4 class="alert-heading">添加成功</h4>
+				</div>
+			</present>
+
+<div class="top-button">
+	选择banner分类：<select id="category">
+	<option value="0">未分类</option>
+	<foreach name="bannercategory" item="v">
+		<option value="{$v.id}" <eq name="v.id" value="$cid">selected</eq>>{:str_repeat('— ',$v['level'])}{$v.name}</option>
+	</foreach>
+	</select>
+
+	<a href="{:U('Banners/index',array('cid'=>$cid))}" class="btn btn-primary">banner列表</a>
+	<a href="{:U('Bannercategory/add')}" class="btn btn-primary" >添加分类</a>
+</div>
+
+		<!--<present name="success"><div class="mssage">添加成功。</div></present>-->
+		<div class="list auto">
+			<form method="post" enctype="multipart/form-data" onsubmit="return validate_form(this)">
+				<table class="t2 t4">
+					<tr><th>banner名称：</th><td><input type="text" name="name" class="big"></td></tr>
+					<tr><th>banner编号：</th><td><input type="text" name="sn" ></td></tr>
+					<tr><th>是否上架：</th><td><select name="on_sale"><option value="yes" selected>是</option><option value="no">否</option></select></td></tr>
+					<tr><th>首页推荐：</th><td><select name="recommend"><option value="yes">是</option><option value="no" selected>否</option></select></td></tr>
+					<tr><th>上传图片：</th><td><input type="file" name="thumb" /></td></tr>
+				</table>
+
+
+				<div class="editor">
+					<include file="Banners/_editor" />
+					<script type="text/plain" id="myEditor" name="desc"><p>请在此处输入banner详情。</p></script>
+				</div>
+
+				<div style="margin-top: 20px">
+					<input class="btn btn-primary" type="submit" value="添加banner">
+					<input class="btn btn-primary" type="submit" value="添加并返回" name="return">
+				</div>
+			</form>
+		</div>
+
+		</div>
+	</div>
+</div>
+
+<script>
+    //下拉菜单跳转
+    $("#category").change(function(){
+        var url = "{:U('Goods/add',array('cid'=>'_ID_'))}";
+        location.href = url.replace("_ID_",$(this).val());
+    });
+</script>
+
+<!-- banner名称不能为空 -->
+<script type="text/javascript">
+    function validate_required(field,alerttxt)
+    {
+        with (field)
+        {
+            if (value==null||value=="")
+            {alert(alerttxt);return false}
+            else {return true}
+        }
+    }
+    function validate_form(thisform)
+    {
+        with (thisform)
+        {
+            if (validate_required(name,"商品名称不能为空")==false)
+            {name.focus();return false}
+        }
+    }
+</script>

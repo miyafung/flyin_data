@@ -1,0 +1,52 @@
+[ 2017-10-15T19:31:48+08:00 ] 43.252.231.5 /admin/Admin_Ta.asp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001084s ]
+ERR: 无法加载控制器:Admin_Ta.asp
+NOTIC: [2] include(): Filename cannot be empty /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Filename cannot be empty /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening '' for inclusion (include_path='.:/usr/local/php53/lib/php') /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2017-10-15T19:31:48+08:00 ] 43.252.231.5 /admin/error.asp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000694s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001083s ]
+ERR: 无法加载控制器:Error.asp
+NOTIC: [2] include(): Filename cannot be empty /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Filename cannot be empty /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening '' for inclusion (include_path='.:/usr/local/php53/lib/php') /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2017-10-15T19:31:56+08:00 ] 43.252.231.5 /admin/images/Sql.asp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+ERR: 无法加载控制器:Images
+NOTIC: [2] include(): Filename cannot be empty /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Filename cannot be empty /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening '' for inclusion (include_path='.:/usr/local/php53/lib/php') /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2017-10-15T19:31:57+08:00 ] 43.252.231.5 /admin/sdfg.asp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001153s ]
+ERR: 无法加载控制器:Sdfg.asp
+NOTIC: [2] include(): Filename cannot be empty /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Filename cannot be empty /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening '' for inclusion (include_path='.:/usr/local/php53/lib/php') /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+

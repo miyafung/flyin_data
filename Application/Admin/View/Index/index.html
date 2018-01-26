@@ -1,0 +1,175 @@
+<!--面包屑和标题-->
+<div id="content-header">
+	<div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i>Home</a> <a href="#" class="current">中文后台首页</a> </div>
+	<h1>中文后台首页</h1>
+</div>
+
+<div class="container-fluid">
+	<!--End-Chart-box-->
+	<hr/>
+	<!--第一部分-->
+	<div class="row-fluid">
+		<div class="span4">
+			<ul class="site-stats">
+				<li class="bg_ls"><i class="icon-user"></i> <strong>{$sumScore}</strong> <small>产品总访问量</small></li>
+				<li class="bg_ls"><i class="icon-file"></i> <strong>{$pdfScore}</strong> <small>pdf总下载量</small></li>
+				<!--		<li class="bg_ls"><i class="icon-globe"></i> <strong>8540</strong> <small>Online Orders</small></li>-->
+			</ul>
+		</div>
+		<div class="span8">
+			<dl class="bordered" >
+				<dt>点击查看详细数据统计</dt>
+				<dd style="font-size: 14px;">
+					<script type="text/javascript">
+                        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+                        document.write(unescape("%3Cspan id='cnzz_stat_icon_1262237262'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1262237262%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
+					</script>
+				</dd>
+			</dl>
+		</div>
+	</div>
+	<hr>
+	<!--内容统计信息-->
+	<div class="row-fluid">
+		<div class="span3">
+			<div class="widget-box">
+				<div class="widget-title"> <span class="icon"> <i class="icon-list"></i> </span>
+					<h5>新闻</h5>
+				</div>
+				<div class="widget-content">
+					<ul>
+						<volist id="nvo" name="newlist">
+							<li title="{$nvo.name}({$nvo.num}篇)">{$nvo.name}({$nvo.num}篇)</a></li>
+						</volist>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="span3">
+			<div class="widget-box">
+				<div class="widget-title"> <span class="icon"> <i class="icon-list"></i> </span>
+					<h5>服务支持</h5>
+				</div>
+				<div class="widget-content">
+					<ul>
+						<volist id="svo" name="servicelist">
+							<li title="{$svo.name}({$svo.num}篇)">{$svo.name}({$svo.num}篇)</a></li>
+						</volist>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="span3">
+			<div class="widget-box">
+				<div class="widget-title"> <span class="icon"> <i class="icon-list"></i> </span>
+					<h5>产品</h5>
+				</div>
+				<div class="widget-content">
+					<ul>
+						<volist id="gvo" name="goodlist">
+							<li title="{$gvo.cat_name}({$gvo.num}篇)">{$gvo.cat_name}({$gvo.num}篇)</a></li>
+						</volist>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="span3">
+			<div class="widget-box">
+				<div class="widget-title"> <span class="icon"> <i class="icon-list"></i> </span>
+					<h5>banner图</h5>
+				</div>
+				<div class="widget-content">
+					<ul>
+						<volist id="bvo" name="bannerlist">
+							<li title="{$bvo.name}({$bvo.num}篇)">{$bvo.name}({$bvo.num}篇)</a></li>
+						</volist>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--系统信息-->
+	<div class="row-fluid">
+		<table class="table table-bordered table-striped">
+			<tr>
+				<th>产品总访问量</th><th>产品名</th><th>{$sumScore}</th>
+			</tr>
+			<tr>
+				<th>访问量第一</th>
+				<td>{$maxgoods[0][goods_name]}</td>
+				<td>{$maxgoods[0][hits]}</td>
+			</tr>
+			<tr>
+				<th>访问量第二</th>
+				<td>{$maxgoods[1][goods_name]}</td>
+				<td>{$maxgoods[1][hits]}</td>
+			</tr>
+			<tr>
+				<th>总访问量最大</th>
+				<td>{$maxgoods[2][goods_name]}</td>
+				<td>{$maxgoods[2][hits]}</td>
+			</tr>
+			<tr>
+				<th>总访问量最小</th>
+				<td>{$mingoods[0][goods_name]}</td>
+				<td>{$minScore}</td>
+			</tr>
+		</table>
+		<!--网站参数信息-->
+		<div class="widget-box">
+			<div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+				<h5>本系统的基本参数</h5>
+			</div>
+			<div class="widget-content nopadding">
+				<table class="table table-bordered table-striped">
+					<thead>
+					<tr>
+						<th>服务器信息</th>
+						<th>参数</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>开发框架：</td>
+						<td>Thinkphp {$Think.version}</td>
+					</tr>
+					<tr>
+						<td>系统环境：</td>
+						<td>{$serverInfo['server_version']}</td>
+					</tr>
+					<tr>
+						<td>服务器时间：</td>
+						<td>{$serverInfo['server_time']}</td>
+					</tr>
+					<tr>
+						<td>MySQL版本：</td>
+						<td>{$serverInfo['mysql_version']}</td>
+					</tr>
+					<tr>
+						<td>文件上传限制：</td>
+						<td>{$serverInfo['max_upload']}</td>
+					</tr>
+					<tr>
+						<td>脚本执行时限：</td>
+						<td>{$serverInfo['max_ex_time']}</td>
+					</tr>
+
+					<tr>
+						<td>IP:</td>
+						<td>{$_SERVER['REMOTE_ADDR']}</td>
+					</tr>
+					</tbody>
+				</table>
+
+
+			</div>
+
+		</div>
+	</div>
+
+</div>
+
+
+
+
+

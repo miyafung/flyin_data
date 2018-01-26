@@ -1,0 +1,55 @@
+<!-- Listing Start
+<section id="listing1" class="listing1 padding_top">
+ -->
+    <section>
+        <div style="height: 80px;width: 100%"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-uppercase">PDF速查</h3>
+                 <!--商品分类-->
+                <a href="{:U('Pdf/orderByName')}" class="btn btn-primary" style="margin-right: 20px;">按照英文字母排序</a>
+                <form action="" method="post">
+                    <input type="search" name="keywords"  placeholder="请输入PDF文档名字..." class="keyword-input"/>
+                    <button type="submit" class="tip-bottom" title="Search"><i class="fa fa-search"></i></button>
+                </form>
+                 <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>产品名字</th>
+                                <th>文档名字</th>
+                                <th>下载</th>
+                            </tr>
+                        </thead>
+                            <foreach name="pdfsearch" item="lk">
+                                <tr>
+                                    <td align="center">{$lk.goods_id}</td>
+                                    <td align="center">{$lk.goods_name}</td>
+                                    <td>
+                                        <a href=" __PUBLIC__/Uploads/pdf/{$lk.goods_pdf}" target="_blank">
+                                           <i class="fa fa-file-pdf-o"></i> {$lk.goods_pdf}
+                                         </a>
+                                    </td>
+                                    <!--
+
+                                    <td style="text-align: center;font-size: 14px"> -->
+                                    <td style="text-align: center;font-size: 14px">
+                                        <a href="{:U('Pdf/downloadFile',array('goods_id'=>$lk['goods_id']))}"><i class="fa fa-download"></i> ({$lk.pdfhits})</a>
+                                        <!-- 下载次数 -->
+                                        <script>
+                                            var ajax;
+                                            if(window.XMLHttpRequest){ ajax = new XMLHttpRequest();}else{ ajax = new ActiveXObject('Microsoft.XMLHTTP');}
+                                            ajax.open('GET','__MODULE__/Pdf/downloadFile/{$_GET['goods_id']}',true);
+                                            ajax.send();
+                                        </script>
+                                    </td>
+                                </tr>
+                            </foreach>
+                    </table>
+        </div>
+        </div>
+    </div>
+</section>
+
+

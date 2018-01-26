@@ -1,0 +1,30 @@
+<div id="content-header">
+	<div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 分类</a> <a href="#" class="current">分类添加</a> </div>
+	<h1>分类添加</h1>
+</div>
+
+<div class="container-fluid">
+	<hr>
+	<div class="row-fluid">
+      	<div class="col-md-12">
+
+	      	<form action="{$act}" class="form-horizontal" method="post">
+	      				<div class="form-group">
+	      					<label for="" class="control-label col-md-2">
+	      						分类名:
+	      					</label>
+							<div class="col-md-6">
+								<input type="text" name="cat_name" id="cat_name" class="form-control" value="<notempty name='catInfo'>{$catInfo.cat_name}</notempty>">
+							</div>
+	      				</div>
+	      				<div class="form-group">
+	      					<div class="col-md-offset-2 col-md-10">
+	      						<input type="submit" value="{$actInfo}" class="btn btn-primary">
+	      					</div>
+	      				</div>
+	      				<input type="hidden" name="cat_id" value="<notempty name='catInfo.cat_id'>{$catInfo.cat_id}</notempty>">
+	      			</form>
+
+      	</div>
+     </div>
+</div>

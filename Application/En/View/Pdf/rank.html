@@ -1,0 +1,29 @@
+<section id="listing1" class="listing1 padding_top">
+    <div class="container">
+        <div class="row">
+             <h3>PDF -- Alphabetical order</h3>
+                        <table class="table table-bordered table-striped">
+                                <thead>
+                                    <th>Letter</th>
+                                    <th>pdf</th>
+                                </thead>
+                                <foreach name="list" item="vo" key='k'>
+                                    <tr>
+                                        <td>{$k} </td>
+                                        <td>
+                                            <volist name="vo" id="v">
+                                            <a href=" __PUBLIC__/Uploads/pdf/{$v}" target="_blank">
+                                               {$v}<br>
+                                            </a>
+                                            </volist>
+                                        </td>
+                                    </tr>
+                                </foreach>
+                        </table>
+        </div>
+    </div>
+</section>
+
+
+
+

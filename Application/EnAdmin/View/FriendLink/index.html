@@ -1,0 +1,91 @@
+
+<script src="__PUBLIC__/Admin/js/jquery.js"></script>
+
+<div id="content-header">
+	<div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 添加友情链接</a> <a href="#" class="current">添加友情链接</a> </div>
+	<h1>添加友情链接</h1>
+</div>
+
+
+<div class="container-fluid">
+	<hr>
+	<div class="row-fluid">
+		<div class="span12">
+
+
+			<a href="{:U('FriendLink/addlink')}" class="btn btn-primary">添加链接</a>
+
+			<!-- 搜索框 -->
+			<form action="__CONTROLLER__/searchengine" method="post" >
+				<span>
+					<input type="search" name="keywords"/>
+					<input type="submit" class="btn btn-primary" value="搜索"  />
+				</span>
+			</form>
+
+
+			<form action="__CONTROLLER__/delall" method="post">
+				<table class="table table-bordered table-striped">
+					<tr>
+						<th>ID</th>
+						<th>链接名称</th>
+						<th>链接URL</th>
+						<th>网站描述</th>
+						<th>排序值</th>
+						<th>是否显示</th>
+						<th>打开方式</th>
+						<th>操作</th>
+					</tr>
+
+					<foreach name="link" item="lk">
+						<tr>
+							<td>{$lk.id}</td>
+							<td>{$lk.linkname}</td>
+							<td>{$lk.url}</td>
+							<td>{$lk.introduction}</td>
+							<td>{$lk.linkorder}</td>
+							<td>{$lk.isshow}</td>
+							<td>{$lk.linktype}</td>
+							<td><a href="__CONTROLLER__/mod/id/{$lk.id}">修改</a>|<a href="__CONTROLLER__/del/id/{$lk['id']}">删除</a></td>
+						</tr>
+					</foreach>
+
+
+
+
+				</table>
+			</form>
+
+
+			<tr>
+				<td align="center">{$page}</td>
+			</tr>
+
+
+
+
+			<div style="margin-top: 10px;">
+				<!-- JiaThis Button BEGIN -->
+				<div class="jiathis_style_24x24">
+					<a class="jiathis_button_qzone"></a>
+					<a class="jiathis_button_tsina"></a>
+					<a class="jiathis_button_weixin"></a>
+					<a class="jiathis_button_fav"></a>
+					<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+					<a class="jiathis_counter_style"></a>
+				</div>
+				<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
+				<!-- JiaThis Button END -->
+			</div>
+
+
+
+		</div>
+	</div>
+</div>
+
+
+
+
+			
+

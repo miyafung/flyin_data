@@ -1,0 +1,45 @@
+
+
+<!--面包屑和标题--->
+<div id="content-header">
+    <div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 关键词</a> <a href="#" class="current">关键词</a> </div>
+    <h1>全站搜索关键词记录</h1>
+</div>
+
+<div class="container-fluid">
+    <hr>
+    <div class="row-fluid">
+        <div class="span12">
+            <table class="table table-bordered table-hover">
+                <thead class="">
+                <tr>
+                    <th class="text-center">ID</th>
+                    <th class="text-center">关键词</th>
+                    <th class="text-center">查询次数</th>
+                    <th class="text-center">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <volist name="Searchkeywordres" id="vo" key="k">
+                    <tr>
+                        <td align="center">{$k}</td>
+                        <td align="center">{$vo.keywords}</td>
+                        <td align="center">{$vo.hits}</td>
+                        <td align="center">
+                            <a href="{:U('Goods/delkeyword',array('keyword_id'=>$vo['keyword_id']))}" class="btn btn-danger btn-sm shiny">
+                                <i class="fa fa-trash-o"></i> 删除
+                            </a>
+                        </td>
+                    </tr>
+                </volist>
+                </tbody>
+            </table>
+            <div style="height:40px;">
+                <ul class="pagination" style="float:right; margin:10px 0 0 0; ">
+                    {$page}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

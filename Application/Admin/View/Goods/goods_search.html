@@ -1,0 +1,51 @@
+<div id="content-header">
+    <div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> banner</a> <a href="#" class="current">产品列表</a> </div>
+    <h1>产品列表</h1>
+
+</div>
+
+<div class="container-fluid">
+    <hr>
+    <div class="row-fluid">
+        <div class="span12">
+
+            <div>
+                <a href="{:U('Goods/add')}" class="btn btn-primary btn-lg">添加商品</a>
+                <h5>产品总数： {$goodsCount} 。</h5>
+            </div>
+
+            <div>
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                    <th>ID</th>
+                    <th>商品图片</th>
+                    <th>商品名称</th>
+                    <th>访问量</th>
+                    <th>操作</th>
+                    </thead>
+                    <volist name="goodssearch" id="vo">
+                        <tr>
+                            <td>{$vo.goods_id}</td>
+                            <td><notempty name="vo.img_small"><img src="__PUBLIC__/Uploads/products/small/{$vo.img_small}" /></notempty></td>
+                            <td>{$vo.goods_name}</td>
+
+                            <td>
+                                <!--判断该$vo.hits 是否大于等于9999-->
+                                <if condition="$vo.hits egt '10'">
+                                    99999+
+                                    <else /> {$vo.hits}
+                                </if>
+                            </td>
+
+                            <td>
+                                <a href="{:U('Goods/edit?goods_id=' . $vo['goods_id'])}">编辑</a>
+                                <a href="{:U('Goods/delete?goods_id=' . $vo['goods_id'])}">删除</a>
+                            </td>
+                        </tr>
+                    </volist>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+[ 2017-10-17T23:15:03+08:00 ] 182.118.33.7 /Public/Home/skins/.%252e/.%252e/.%252e/.%252e/.%252e/.%252e/.%252e/boot.ini
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001063s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001776s ]
+ERR: 无法加载控制器:Public
+NOTIC: [2] include(): Filename cannot be empty /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Filename cannot be empty /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening '' for inclusion (include_path='.:/usr/local/php53/lib/php') /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2017-10-17T23:15:03+08:00 ] 182.118.33.7 /Public/Home/css/nav/.%252e/.%252e/.%252e/.%252e/.%252e/.%252e/.%252e/boot.ini
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001015s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001752s ]
+ERR: 无法加载控制器:Public
+NOTIC: [2] include(): Filename cannot be empty /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Filename cannot be empty /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening '' for inclusion (include_path='.:/usr/local/php53/lib/php') /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+

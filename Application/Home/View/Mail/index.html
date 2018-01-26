@@ -1,0 +1,177 @@
+<style>
+    /* === Remove input autofocus webkit === */
+    *:focus {outline: none;}
+    /* === Form Typography === */
+    body {font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;}
+    .contact_form h2, .contact_form label {font-family:Georgia, Times, "Times New Roman", serif;}
+    .form_hint, .required_notification {font-size: 11px;}
+
+    /* === List Styles === */
+    .contact_form ul {
+        width:750px;
+        list-style-type:none;
+        list-style-position:outside;
+        margin:0px;
+        padding:0px;
+    }
+    .contact_form li{
+        padding:12px;
+        border-bottom:1px solid #eee;
+        position:relative;
+    }
+    .contact_form li:first-child {
+        border-bottom:1px solid #777;
+    }
+
+    /* === Form Header === */
+    .contact_form h2 {
+        margin:0;
+        display: inline;
+    }
+
+    /* === Form Elements === */
+    .contact_form label {
+        width:80px;
+        margin-top: 3px;
+        display:inline-block;
+        float:left;
+        padding:3px;
+    }
+    .contact_form input {
+        height:30px;
+        width:220px;
+        padding:5px 8px;
+    }
+    .contact_form textarea {padding:8px; width:80%;}
+    .contact_form button {margin-left:150px;}
+
+    /* form element visual styles */
+    .contact_form input, .contact_form textarea {
+        border:1px solid #aaa;
+        box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+        border-radius:2px;
+        padding-right:30px;
+        -moz-transition: padding .25s;
+        -webkit-transition: padding .25s;
+        -o-transition: padding .25s;
+        transition: padding .25s;
+    }
+    .contact_form input:focus, .contact_form textarea:focus {
+        background: #fff;
+        border:1px solid #555;
+        box-shadow: 0 0 3px #aaa;
+        padding-right:70px;
+    }
+
+    /* === HTML5 validation styles === */
+    .contact_form input:required, .contact_form textarea:required {
+        background: #fff url(images/red_asterisk.png) no-repeat 98% center;
+    }
+    .contact_form input:required:valid, .contact_form textarea:required:valid {
+        background: #fff url(images/valid.png) no-repeat 98% center;
+        box-shadow: 0 0 5px #5cd053;
+        border-color: #28921f;
+    }
+    .contact_form input:focus:invalid, .contact_form textarea:focus:invalid {
+        background: #fff url(images/invalid.png) no-repeat 98% center;
+        box-shadow: 0 0 5px #d45252;
+        border-color: #b03535
+    }
+
+    /* === Form hints === */
+    .form_hint {
+        background: #d45252;
+        border-radius: 3px 3px 3px 3px;
+        color: white;
+        margin-left:8px;
+        padding: 1px 6px;
+        z-index: 999; /* hints stay above all other elements */
+        position: absolute; /* allows proper formatting if hint is two lines */
+        display: none;
+    }
+    .form_hint::before {
+        content: "\25C0";
+        color:#d45252;
+        position: absolute;
+        top:1px;
+        left:-6px;
+    }
+    .contact_form input:focus + .form_hint {display: inline;}
+    .contact_form input:required:valid + .form_hint {background: #28921f;}
+    .contact_form input:required:valid + .form_hint::before {color:#28921f;}
+
+    /* === Button Style === */
+    button.submit {
+        background-color: #1f3f81;
+        color: white;
+        font-weight: bold;
+        padding: 6px 20px;
+        text-align: center;
+    }
+    button.submit:hover {
+        opacity:.85;
+        cursor: pointer;
+    }
+
+
+    .contact_form{padding-top:60px;}
+
+</style>
+
+
+<section id="contact-us">
+
+    <div align="center">
+        <table border="1" width="47%" height="250" style="border-width: 0px" class="table-responsive">
+            <!-- MSTableType="layout" -->
+
+            <tr>
+                <td style="border-style: none; border-width: medium">
+                    　<form class="contact_form"  method="post" name="contact_form"  action="{:U('Mail/send')}" enctype="multipart/form-data">
+                    <ul>
+                        <li>
+                            <h4>在线留言</h4>
+                         <!--   <span>* 表示必填项</span>-->
+                            <p>12小时内尽快给您回复</p>
+                        </li>
+                        <li>
+                            <label for="name">姓名:</label>
+                            <input name="name" type="text"  placeholder="name" required />
+                        </li>
+
+                        <li>
+                            <label for="email">邮件:</label>
+                            <input type="email" name="adress"  placeholder="123456@qq.com" required />
+                            <span class="form_hint">格式：123456@qq.com</span>
+                        </li>
+
+                        <li>
+                            <label for="country">国家:</label>
+                            <input name="country" type="text"  placeholder="country" required />
+                        </li>
+
+                        <li>
+                            <label for="Phone Number">电话:</label>
+                            <input name="number"  type="text"  placeholder="Phone Number" required />
+                        </li>
+
+                        <li>
+                            <label for="message">留言:</label>
+                            <textarea name="message" cols="40" rows="6" placeholder="message" required ></textarea>
+                        </li>
+
+                        <li>
+                            <label for="Comments Question">其他问题:</label>
+                            <textarea name="com" cols="40" rows="4" placeholder="Comments /Question" ></textarea>
+                        </li>
+
+
+                        <li>
+                            <button class="submit" type="submit">发送邮件</button>
+                        </li>
+                    </ul>
+                </form></td>
+            </tr>
+        </table>
+    </div>
+</section>

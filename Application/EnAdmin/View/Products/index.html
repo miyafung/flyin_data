@@ -1,0 +1,147 @@
+
+<div id="content-header">
+	<div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> banner</a> <a href="#" class="current">banner列表</a> </div>
+	<h1>banner列表</h1>
+</div>
+
+<div class="container-fluid">
+	<hr>
+	<div class="row-fluid">
+		<div class="span12">
+
+			<!--分类 START-->
+			<div class="top-button">
+				选择banner分类：<select id="productcategory">
+				<option value="-1" >全部</option>
+				<option value="0" <eq name="cid" value="0">selected</eq>>未分类</option>
+				<foreach name="productcategory" item="v">
+					<option value="{$v.id}" <eq name="v.id" value="$cid">selected</eq>>{:str_repeat('— ',$v['level'])}{$v.name}</option>
+				</foreach>
+			</select>
+				<a href="{:U('Products/add',array('cid'=>$cid))}" class="btn btn-primary">添加商品</a>
+				<a href="{:U('Productcategory/add')}" class="btn btn-primary">添加分类</a>
+			</div>
+			<!--分类 END-->
+
+			<!--banner列表 START-->
+			<div class="widget-box">
+				<div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+					<h5>格式建议 *首页banner建议规格1920px*474px,大小100kb以内</h5>
+				</div>
+
+				<div class="widget-content nopadding">
+					<table class="table table-bordered table-striped">
+						<thead>
+						<tr>
+							<th>缩略图</th>
+							<th>banner分类</th>
+							<th>banner名称</th>
+							<th>上线</th>
+							<th>推荐</th>
+							<th>操作</th>
+						</tr>
+						</thead>
+						<tbody>
+
+						<foreach name="products.data" item="v">
+							<tr class="odd gradeX">
+								<td>
+									<img style="height:40px;" src="__PUBLIC__/Uploads/PP/small/{$v.thumb}">
+									<a style="width: 60px;height: 30px;display: inline-block" href="__PUBLIC__/Uploads/PP/big/{$v.thumb}" class="tooltip">
+									</a>
+								</td>
+
+								<td>
+									<empty name="v.productcategory_id">
+										<a href="{:U('Products/index','cid=0')}">未分类</a>
+										<else/>
+										<a href="{:U('Products/index',array('cid'=>$v['productcategory_id']))}">{$v.productcategory_name}</a>
+									</empty>
+								</td>
+								<td>{$v.name}</td>
+								<td><a href="#" class="act-onsale" data-id="{$v.id}" data-status="{$v.on_sale}"><eq name="v.on_sale" value="yes">是<else/>否</eq></a></td>
+								<td><a href="#" class="act-recommend" data-id="{$v.id}" data-status="{$v.recommend}"><eq name="v.recommend" value="yes">是<else/>否</eq></a></td><td>
+								<a href="{:U('Products/edit',array('id'=>$v['id'],'cid'=>$v['productcategory_id'],'p'=>$p))}">修改</a>　
+								<a href="#" class="act-del" data-id="{$v.id}">删除</a>
+							</td>
+							</tr>
+						</foreach>
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+			<!--banner列表 END-->
+
+			<!--分页-->
+			<div class="pagelist">{$products.pagelist}</div>
+
+			<form method="post" id="form">
+				<input type="hidden" name="id" id="target_id">
+				<input type="hidden" name="field" id="target_field">
+				<input type="hidden" name="status" id="target_status">
+			</form>
+		</div>
+	</div>
+</div>
+
+
+<script>
+    //下拉菜单跳转
+    $("#productcategory").change(function(){
+        var url = "{:U('Products/index',array('cid'=>'_ID_'))}";
+        location.href = url.replace("_ID_",$(this).val());
+    });
+    //快捷操作
+    function change_status(obj,field){
+        $("#target_id").val(obj.attr("data-id"));
+        $("#target_field").attr("value",field)
+        $("#target_status").attr("value",(obj.attr("data-status")=="yes") ? "no" : "yes");
+        $("#form").attr("action","{:U('Products/change',array('p'=>$p,'cid'=>$cid))}").submit();
+    }
+    //快捷操作-上架
+    $(".act-onsale").click(function(){
+        change_status($(this),'on_sale');
+    });
+    //快捷操作-推荐
+    $(".act-recommend").click(function(){
+        change_status($(this),'recommend');
+    });
+    //快捷操作-删除
+    $(".act-del").click(function(){
+        if(confirm('确定要删除吗？')){
+            $("#target_id").val($(this).attr("data-id"));
+            $("#form").attr("action","{:U('Products/del',array('p'=>$p,'cid'=>$cid))}").submit();
+        }
+    });
+</script>
+
+
+
+
+<script type="text/javascript">
+    //鼠标悬停头像,使之放大
+    var x = 30;
+    var y = 10;
+    $("a.tooltip").mouseover(function(e){
+        this.myTitle = this.title;
+        this.title = "";
+        var imgTitle = this.myTitle? "<br/>" + this.myTitle : "";
+        var tooltip = "<div id='tooltip'><img src='"+ this.href +"' alt='精品预览图' width='350' height='300'>"+imgTitle+"<\/div>"; //创建 div 元素
+        $("body").append(tooltip);  //把它追加到文档中
+        $("#tooltip")
+            .css({
+                "top": (e.pageY-y) + "px",
+                "left":  (e.pageX+x)  + "px"
+            }).show("fast");    //设置x坐标和y坐标，并且显示
+    }).mouseout(function(){
+        this.title = this.myTitle;
+        $("#tooltip").remove();  //移除
+    }).mousemove(function(e){
+        $("#tooltip")
+            .css({
+                "top": (e.pageY-y) + "px",
+                "left":  (e.pageX+x)  + "px"
+            });
+    });
+</script>

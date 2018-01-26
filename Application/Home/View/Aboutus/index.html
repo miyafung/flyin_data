@@ -1,0 +1,57 @@
+
+<!-- Page Banner Start-->
+<section class="page-banner padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="text-uppercase">关于我们</h1>
+                <p>飞宇集团有源部欢迎你的到来</p>
+                <ol class="breadcrumb text-center">
+                    <li><a href="{:U('Home/index')}">Home</a></li>
+                    <li><a href="{:U('Aboutus/index')}">About Us</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Page Banner End -->
+
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+    <!--
+    <foreach name="path" item="v">&nbsp;
+        <a href="{:U('News/index',array('cid'=>$v['id']))}">{$v.name}</a>&nbsp;&gt;
+    </foreach>&nbsp;{$goods.name}
+    -->
+    <a href="{:U('Home/index')}">Home</a>
+    <a href="{:U('Contact/index')}">关于我们</a>
+</div>
+
+<!--Contact-->
+<section id="contact-us">
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-xs-12" >
+                    <volist name="aboutus" id="ab">
+                        <p>{$ab.profile}</p>
+                        <img src="__PUBLIC__/Common/Uploads/Certification/{$ab.certification}" class="img-responsive center-block" />
+                        <p style="text-align:center;margin:20px;">{$ab.culture}</p>
+                    </volist>
+                </div>
+                <!--
+                <div class="col-md-4 col-sm-4 col-xs-12  contact-text">
+                    <div class="agent-p-contact">
+                        <div class="our-agent-box bottom30">
+                            <h4>关于我们</h4>
+                        </div>
+                        <div class="agetn-contact-2 bottom30">
+                    </div>
+                </div>
+
+            </div>
+                 -->
+        </div>
+    </div>
+</section>
+<!-- Contact End -->

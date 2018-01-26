@@ -1,0 +1,50 @@
+
+<div id="content-header">
+	<div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 关于我们修改</a> <a href="#" class="current">关于我们修改</a> </div>
+	<h1>关于我们修改</h1>
+</div>
+
+
+<div class="container-fluid">
+	<hr>
+	<div class="row-fluid">
+		<div class="span12">
+
+<form action="__CONTROLLER__/upd/id/{$setup.id}" method="post" enctype="multipart/form-data">
+				<table class="table table-bordered table-striped">
+					<tr>
+						<th>优势 :</th>
+						<td><textarea name="profile" id=""  >{$setup.profile}</textarea></td>
+					</tr>
+					<tr>
+						<th>文化 :</th>
+						<td><textarea name="culture" id="" >{$setup.culture}</textarea></td>
+					</tr>
+					<tr>
+						<th>证书:</th>
+						<td>
+							<img src="__PUBLIC__/Common/Uploads/Photos/Certification/{$setup.certification}" width="80" height="60" style="margin-right:20px;" />
+							<input type="file" name="certification">
+						</td>
+					</tr>
+
+					<tr>
+						<th>是否启用 :</th>
+						<td style="color:#ff9d59;">
+							<input type="radio" name="status" value="1" <if condition="$setup.status eq 1">checked</if> />是
+							<input type="radio" name="status" value="0" <if condition="$setup.status eq 0">checked</if> />否
+						</td>
+					</tr>
+					<tr>
+						<th></th>
+						<td>
+							<input type="submit" value="修改配置" class="btn btn-primary"/>
+						</td>
+					</tr>
+				</table>
+			</form>
+
+
+		</div>
+	</div>
+</div>

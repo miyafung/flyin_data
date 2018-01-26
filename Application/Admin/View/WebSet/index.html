@@ -1,0 +1,105 @@
+
+<script src="__PUBLIC__/Admin/js/jquery.js"></script>
+		<div id="content-header">
+			<div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 网站配置</a> <a href="#" class="current">网站配置</a> </div>
+			<h1>网站配置</h1>
+		</div>
+
+		<style>
+			th{ width: 80px;}
+		</style>
+
+		<div class="container-fluid">
+			<hr>
+			<div class="row-fluid">
+				<div class="span12">
+
+			<table class="table table-bordered table-striped table-responsive">
+				<foreach name="setup" item="st">
+					<tr>
+						<th>网站标题 :</th>
+						<td>{$st.title}</td>
+					</tr>
+
+
+
+					<tr>
+						<th>公司地址:</th>
+						<td>{$st.address}</td>
+					</tr>
+					<tr>
+						<th>联系人:</th>
+						<td>{$st.linkman}</td>
+					</tr>
+					<tr>
+						<th>手机:</th>
+						<td>{$st.cellphone}</td>
+					</tr>
+					<tr>
+						<th>电话:</th>
+						<td>{$st.tel}</td>
+					</tr>
+					<tr>
+						<th>传真:</th>
+						<td>{$st.fax}</td>
+					</tr>
+					<tr>
+						<th>QQ:</th>
+						<td>{$st.qq}</td>
+					</tr>
+					<tr>
+						<th>邮件:</th>
+						<td>{$st.mail}</td>
+					</tr>
+
+
+
+
+
+
+					<tr>
+						<th>网站版权 :</th>
+						<td>{$st.copy}</td>
+					</tr>
+					<tr style="background: yellow;height: 50px;width:100px;" >
+						<th>网站Logo :</th>
+						<td><img src="__PUBLIC__/Common/Uploads/Photos/{$st.logo}" style="width: 80px"/></td>
+					</tr>
+					<tr>
+						<th>网站关键字 :</th>
+						<td>{$st.keywords}</td>
+					</tr>
+					<tr>
+						<th>网站描述 :</th>
+						<td>{$st.description}</td>
+					</tr>
+					<tr>
+						<th>今日搜索 :</th>
+						<td>{$st.hotsearch}</td>
+					</tr>
+					<tr>
+						<th>网站作者 :</th>
+						<td>{$st.author}</td>
+					</tr>
+					<tr>
+						<th>是否启用 :</th>
+						<td style="color:#ff9d59;"><span style="margin-left:20px;">{$st.status}</span></td>
+					</tr>
+					<tr>
+						<th>配置操作:</th>
+						<td  style="line-height:50px;" colspan="4">
+							<!--<a href="__CONTROLLER__/updWebSet/id/{$st.id}" class="btn btn-primary">修改</a>-->
+							<a href="__CONTROLLER__/updWebSet/id/{$st.id}" class="btn btn-primary" style="text-decoration:none;margin-left:20px;">修改</a> | <a href="__CONTROLLER__/delWebSet/id/{$st.id}" class="btn btn-primary" style="text-decoration:none;">删除</a> |
+							<a href="__CONTROLLER__/addWebSet" class="btn btn-primary" hidden>添加配置</a>
+						</td>
+					</tr>
+				</foreach>
+
+			</table>
+
+						<a class="btn btn-primary" href="{:U('WebSet/clearRuntime')}">清除网站缓存runtime</a>
+
+				</div>
+			</div>
+		</div>
+

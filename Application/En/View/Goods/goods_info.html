@@ -1,0 +1,207 @@
+<style>
+	/**产品详情页面的样式 START**/
+	ul,li{list-style-type:none;padding:0; margin:0;}
+	.tb-pic a{display:table-cell;text-align:center;vertical-align:middle;}
+	.tb-pic a img{vertical-align:middle;}
+	.tb-pic a{*display:block;*line-height:1;}
+	.tb-thumb{margin:10px 0 0;overflow:hidden;}
+	.tb-thumb li{background:none repeat scroll 0 0 transparent;float:left;height:60px;width:60px;margin:0 6px 0 0;overflow:hidden;padding:1px;}
+	.tb-s310, .tb-s310 a{height:310px;width:310px;border: 1px solid #ccc;}
+	.tb-s310, .tb-s310 img{max-height:310px;max-width:310px;}
+	.tb-s310 a{*font-size:271px;}
+	.tb-s40 a{*font-size:20px;}
+	.tb-s40, .tb-s40 a{height:58px;width:58px;}
+	.tb-booth{
+		/*border:1px solid #CDCDCD;*/
+		position:relative;z-index:1;
+	}
+	.tb-thumb .tb-selected{background:none repeat scroll 0 0 #C30008;height:62px;width:62px;padding:2px;}
+	.tb-thumb .tb-selected div{background-color:#FFFFFF;border:medium none;}
+	.tb-thumb li div{border:1px solid #ccc;}
+
+	/*
+	div.zoomDiv{z-index:999;position:absolute;top:0px;left:0px;width:200px;height:200px;background:#ffffff;border:1px solid #CCCCCC;display:none;text-align:center;overflow:hidden;}
+	div.zoomMask{position:absolute;background:url("__PUBLIC__/img/mask.png") repeat scroll 0 0 transparent;cursor:move;z-index:1;}
+	*/
+	/**产品详情页面的样式 END**/
+	/** 产品二级页面样式 START**/
+	.jieduan {
+		overflow: hidden; /*自动隐藏文字*/
+		text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+		white-space: nowrap; /*强制不换行*/
+		width: 22em;/*不允许出现半汉字截断*/
+		/*color:#6699ff;border:1px #ff8000 dashed;*/
+	}
+	/** 产品页面样式 END**/
+</style>
+<!--放大镜图片切换-->
+<script src="__PUBLIC__/Home/js/jquery.js"></script>
+<script src="__PUBLIC__/Home/js/json2.js"></script>
+<script src="__PUBLIC__/Home/js/jquery.imagezoom.min.js"></script>
+<!--放大镜图片切换-->
+<div style="height: 100px;width: 100%;"></div>
+<section>
+	<div class="container">
+		<!--面包屑 START
+        <div class="now_cat">当前位置：
+            {$goodsInfo.goods_name}
+            <ol class="breadcrumb">
+                <li><a href="{U('Goods/view')}">Goods</a></li>
+                <foreach name="path" item="v">
+                    <li> <a href="{:U('Goods/view',array('cat_id'=>$v['cat_id']))}">{$v.goods_name}</a></li>
+                </foreach>&nbsp;
+            </ol>
+        </div>
+        -->
+		<!--面包屑 END-->
+		<!--放大镜图片切换 START-->
+		<div class="row">
+			<div class="col-md-5">
+				<div class="box">
+					<div class="tb-booth tb-pic tb-s310">
+						<notempty name="goodsInfo['gallery'][0].img_center">
+							<a href=""><img style="height: 100%" class="img-responsive center-block" src="__PUBLIC__/Uploads/products/center/{$goodsInfo['gallery'][0].img_center}" class="jqzoom" rel="__ROOT__/{$goodsInfo['gallery'][0].img_big}" /></a>
+						</notempty>
+					</div>
+					<ul class="tb-thumb" id="thumblist">
+						<volist name="goodsInfo.gallery" id="vo">
+							<li <eq name="key" value="0">class="tb-selected"</eq> >
+							<div class="tb-pic tb-s40">
+								<a href="#">
+									<!--	<img src="__PUBLIC__/Uploads/products/small/{$vo.img_center}" mid="__PUBLIC__/Uploads/products/center/{$vo.img_center}" big="__PUBLIC__/Uploads/products/water/{$vo.img_center}">-->
+									<img src="__PUBLIC__/Uploads/products/small/{$vo.img_center}" mid="__PUBLIC__/Uploads/products/center/{$vo.img_center}" >
+								</a>
+							</div>
+							</li>
+						</volist>
+					</ul>
+				</div>
+				<!--放大镜图片切换 END-->
+			</div>
+
+			<!-- 参数模块 START -->
+			<div class="col-md-7" style="padding:30px;">
+				<form action="{:U('Cart/insert')}" method="post" class="form-horizontal">
+					<h4 style="font-weight: bold">{$goodsInfo.goods_name}</h4>
+					<div class="form-group">
+						<!-- 参数详情  START-->
+						<notempty name="goodsInfo2.parameter">
+							<volist name="goodsInfo2.parameter" item="voo" id="vvo" key="key">
+								<div class="form-group">
+									<label class="control-label col-md-2">{$goodsInfo2['parameter_name2'][$key-1]}:</label>
+									<div class="col-md-10">
+										<php>print_r($vvo['parameter_value2']);</php>
+										<php>$temp2 = $goodsInfo2['parameter_value2'][$key-1];</php>
+										<php>foreach($temp2 as $vo ){</php>
+										<label style="font-weight: 400;color:#4c4d4d;border: 1px solid #c0c0c0;border-radius: 3px;
+				b; margin: 4px 0px 4px 0px;padding: 2px 6px 2px 6px;">{$vo}</label>
+										<php>}</php>
+									</div>
+									<hr>
+								</div>
+							</volist>
+						</notempty>
+						<!-- 参数  END-->
+
+						<div class="form-group">
+							<div class="col-md-offset-2 col-md-10">
+								<!--<button class="btn btn-primary">添加到购物车</button>-->
+								<!--<a href="{:U('Mail/index')}" class="btn btn-primary" target="_blank">马上咨询</a>-->
+								<a href="__APP__/Mail/index" class="btn btn-primary" target="_blank">马上咨询</a>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-md-offset-2 col-md-10">
+								访问量：
+								<!--判断该$vo.hits 是否大于等于9999-->
+								<if condition="$goodsInfo.hits egt '9999'">
+									99999+
+									<else/> {$goodsInfo.hits}
+								</if>
+							</div>
+						</div>
+						<input type="hidden" name="goods_id" value="{$goodsInfo.goods_id}">
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- 参数模块 END -->
+	<!--详情 标签页 START-->
+	<ul class="nav nav-tabs" role="tablist" id="tab-list">
+		<li role="presentation" class="active"><a href="#diyizhang" role="tab" data-toggle="tab">Description</a></li>
+		<li role="presentation"><a href="#dierzhang" role="tab" data-toggle="tab">Parameter</a></li>
+		<li role="presentation"><a href="#disanzhang" role="tab" data-toggle="tab">PDF</a></li>
+	</ul>
+
+	<!-- 详情 标签页对应的内容 END-->
+	<div class="tab-content">
+		<div role="tabpanel" class="tab-pane active" id="diyizhang">
+			<div class="col-md-12">
+				<h5>description</h5>
+			</div>
+			<div class="col-md-12">
+				{$goodsInfo.goods_desc|htmlspecialchars_decode}
+			</div>
+		</div>
+		<div role="tabpanel" class="tab-pane" id="dierzhang">
+			<div class="col-md-12">
+				<h5>performance</h5>
+			</div>
+			<div class="col-md-12">
+				{$goodsInfo.goods_performance|htmlspecialchars_decode}
+			</div>
+		</div>
+		<div role="tabpanel" class="tab-pane" id="disanzhang">
+			<div class="col-md-12">
+				<php>
+					echo rawurldecode('{$goodsInfo.goods_pdf}'); //
+				</php>
+				<a href=" __PUBLIC__/Uploads/pdf/{$goodsInfo.goods_pdf}" target="_blank">
+					<img src="__PUBLIC__/Home/images/PDF.png" border="0"/>{$goodsInfo.goods_pdf}
+				</a>
+				<object type="application/pdf" data="__PUBLIC__/Uploads/pdf/{$goodsInfo.goods_pdf}" width="100%" height="500">
+				</object>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--放大镜 特效 START-->
+<script>
+    /**  写法修改
+     $(function(){
+        $(".jqzoom").imagezoom();
+        $("#thumblist li a").click(function(){
+            $(this).parents("li").addClass("tb-selected").siblings().removeClass("tb-selected");
+            $(".jqzoom").attr('src',$(this).find("img").attr("mid"));
+            $(".jqzoom").attr('rel',$(this).find("img").attr("big"));
+        });
+    });
+     **/
+    (function($){
+        $(".jqzoom").imagezoom();
+        $("#thumblist li a").click(function(){
+            $(this).parents("li").addClass("tb-selected").siblings().removeClass("tb-selected");
+            $(".jqzoom").attr('src',$(this).find("img").attr("mid"));
+            $(".jqzoom").attr('rel',$(this).find("img").attr("big"));
+        });
+    })(jQuery);
+</script>
+<!--放大镜 特效 END-->
+
+<!-- thinphp+ajax实现统计页面pv浏览量  -->
+<script>
+    var ajax;
+    if(window.XMLHttpRequest){ ajax = new XMLHttpRequest();}else{ ajax = new ActiveXObject('Microsoft.XMLHTTP');}
+    ajax.open('GET','__MODULE__/Goods/set_hits/goods_id/{$_GET['goods_id']}',true); //注意路径问题 goods_id
+    ajax.send();
+</script>
+<!-- thinphp+ajax实现统计页面pv浏览量  END-->
+<!-- 给P标签下面的图片添加属性 让图片自适应 -->
+<script>
+    $(window).load(function(){
+        $("p img").addClass("img-responsive");
+    })
+</script>
+

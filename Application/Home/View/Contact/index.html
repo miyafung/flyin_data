@@ -1,0 +1,121 @@
+<link rel="stylesheet" href="__PUBLIC__/Admin/css/admin.css"> <!--百度地图样式-->
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=6RBtRZpG0UdADGsEkVl0CZUO4po2XAo1"></script><!--KEY-->
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+
+<!-- Page Banner Start-->
+<section class="page-banner padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="text-uppercase">联系我们</h1>
+                <p>飞宇集团有源部欢迎你的到来</p>
+                <ol class="breadcrumb text-center">
+                    <!--
+                    <foreach name="path" item="v">&nbsp;
+                        <a href="{:U('News/index',array('cid'=>$v['id']))}">{$v.name}</a>&nbsp;&gt;
+                    </foreach>&nbsp;{$goods.name}
+                    -->
+                    <li><a href="{:U('Home/index')}">Home</a></li>
+                    <li><a href="{:U('News/index')}">News</a></li>
+                    <foreach name="path" item="v">
+                        <li> <a href="{:U('News/index',array('cid'=>$v['id']))}">{$v.name}</a></li>
+                    </foreach>&nbsp;
+                </ol>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Page Banner End -->
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+    <!--
+    <foreach name="path" item="v">&nbsp;
+        <a href="{:U('News/index',array('cid'=>$v['id']))}">{$v.name}</a>&nbsp;&gt;
+    </foreach>&nbsp;{$goods.name}
+    -->
+    <a href="{:U('Home/index')}">Home</a>
+    <a href="{:U('Contact/index')}">联系我们</a>
+</div>
+
+<!--Contact-->
+
+<section id="contact-us">
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-8 hidden-xs">
+                    <div id="map">
+                        <div class="container-fluid">
+                            <div id="l-map"></div>
+                            <div id="routePanel">
+                                <p style="margin-right:10px;">起点：<span>深圳</span></p>
+                                <p>终点：<span id="B_PointName1">深圳市飞宇光纤系统有限公司</span>
+                            </div>
+                            <div id="r-result" style="display:none;"></div>
+                        </div>
+
+                        <script type="text/javascript">
+                            var map = new BMap.Map("l-map");
+                            map.centerAndZoom(new BMap.Point(116.404, 39.915), 12);
+                            map.enableScrollWheelZoom();
+                            var start = "深圳" ,end = "深圳市飞宇光纤系统有限公司";
+                            var transit = new BMap.TransitRoute(map, {
+                                renderOptions: {map: map, panel: "r-result"},
+                                onResultsHtmlSet : function(){$("#r-result").show()}
+                            });
+                            transit.search(start,end);
+                        </script>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-12 ">
+
+                    <div class="agent-p-contact">
+                        <div class="our-agent-box bottom30">
+                            <h4>联系我们</h4>
+                        </div>
+                        <div class="agetn-contact-2 bottom30">
+                            <p><i class="fa fa-phone" ></i> +86-755-32939630<br>
+                           <!-- <p><i class="fa fa-envelope"></i> info@castle.com</p>-->
+                            <p><i class="fa fa-internet-explorer fa-lg" aria-hidden="true"></i>wwww.flyindate.com</p>
+                            <p><i class="fa fa-map-marker"></i> 深圳市宝安区龙华新区大浪南路德利威工业区四楼</p>
+                        </div>
+
+                        <ul class="social_share bottom20">
+                           <!-- <li><a href="javascript:void(0)" class="linkden"><i class="fa fa-linkedin"></i></a></li>-->
+                        </ul>
+                    </div>
+
+                    <div class="agent-p-form">
+                        <div class="our-agent-box bottom30">
+                            <h4>留言</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12 ">
+                                <form method="post" action="{:U('Contact/index')}" enctype="multipart/form-data" class="callus">
+
+                                    <div class="single-query form-group">
+                                        <input type="text" placeholder="Your Name" class="input" name="name">
+                                    </div>
+                                    <div class="single-query form-group">
+                                        <input type="text" placeholder="Phone Number" class="input" name="phone">
+                                    </div>
+                                    <div class="single-query form-group">
+                                        <input type="text" placeholder="Email Adress"  name="email_adress">
+                                    </div>
+                                    <div class="single-query form-group">
+                                        <textarea placeholder="Massege" class="form-control" name="message"></textarea>
+                                    </div>
+                                    <input type="submit" value="submit now" class="btn-blue">
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+        </div>
+    </div>
+</section>
+<!-- Contact End -->

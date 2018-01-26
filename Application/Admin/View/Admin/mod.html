@@ -1,0 +1,61 @@
+		<title>修改用户信息</title>
+		<script src="__PUBLIC__/Admin/Js/jquery.js"></script>
+		<script src="__PUBLIC__/Admin/Js/jquery.uploadify.min.js"></script>
+
+		<center style="height:50px;line-height:50px;"><b style="font-size:30px;color:#d39c59;">修改用户信息</b></center>
+		<center>
+			<form action="__CONTROLLER__/upduser/id/{$user.id}" method="post" enctype="multipart/form-data">
+				<table width="1000">					
+					<tr>
+						<!-- 用户名,不可更改 -->
+						<th>用&nbsp;户&nbsp;名:</th>
+						<td><input type="text" name="username" disabled value="{$user.username}" class="back_upd_user" /></td>
+						<!-- 修改用户密码 -->
+						<th>用户密码:</th>
+						<td><input type="password" name="passpwd" class="back_upd_user" /></td>
+					</tr>
+
+					<!--修改头像  -->
+					<tr>
+						<th>用户头像:</th>
+						<td>
+							<img src="__PUBLIC__/Common/Uploads/Headpic/{$user.photoname}" width="80" height="50" />
+							 <input type="file" name="photo" />
+						</td>
+
+					</tr>
+
+					<tr>
+						<th>用户手机:</th>
+						<td><input type="text" name="mobilephone" value="{$user.mobilephone}" style="height:23px;width:200px;" /></td>
+					</tr>
+
+					<!-- 修改用户所属组 -->
+					<tr>
+						<th>用户所属组:</th>
+						<td>
+							<select name="gid" id="user_from_group" style="height:25px;">
+								<option value="">---</option>
+								<foreach name="groups" item="gp">
+									<option value="{$gp.id}">{$gp.groupname}</option>
+								</foreach>							
+							</select>
+						</td>
+						<th>真实姓名:</th>
+						<td><input type="text" name="realname" value="{$user.realname}" style="height:23px;" /></td>
+					</tr>
+
+					<!-- 修改用户提交按钮 -->
+					<tr>
+
+						<th colspan="4" style="text-align:center;height:60px;line-height:60px;"><input type="submit" value="修改用户" style="height:30px;width:110px;font-weight:bold;color:#d39c59;" /></th>
+					</tr>
+				</table>
+			</form>
+		</center>
+	</body>
+
+	<script>
+          //默认选中所属组
+          $("#user_from_group option[value='{$user.gid}']").attr("selected","selected");
+	</script>

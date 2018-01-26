@@ -1,0 +1,52 @@
+
+
+
+<div class="now_cat">当前位置：
+    <foreach name="path" item="v">&nbsp;
+        <a href="{:U('Products/index',array('cid'=>$v['id']))}">{$v.name}</a>&nbsp;&gt;
+</foreach>&nbsp;{$goods.name}</div>
+
+
+
+<!--左侧导航-->
+<include file="Products/_slide" />
+<!--<include file="Products/find" />-->
+
+<div class="find">
+    <div class="find-right left">
+        <div class="find-item">
+            <empty name="goods.data"><div class="empty-tip">没有找到您需要的商品。</div>
+                <else/>
+                <foreach name="goods.data" item="v">
+                    <ul class="item left">
+                        <li><a href="{:U('Products/goods',array('id'=>$v['id']))}" target="_blank"><empty name="v.thumb"><img src="__PUBLIC__/Common/img/preview.jpg"><else/><img src="__PUBLIC__/Uploads/small/{$v.thumb}"></empty></a></li>
+                        <li class="goods"><a href="{:U('Products/goods',array('id'=>$v['id']))}" target="_blank">{$v.name}</a></li>
+                        <li class="price">￥{$v.price}</li>
+                    </ul>
+                </foreach>
+                <div class="clear"></div>
+                <div class="pagelist">{$goods.pagelist}</div>
+            </empty>
+        </div>
+    </div>
+</div>
+
+
+<!--推荐商品
+<div style="width: 900px; margin-top: -500px;margin-left: 300px;">
+   <foreach name="best" item="v">
+      <div href="{:U('Products/goods',array('id'=>$v['id']))}" target="_blank" style="padding: 10px;width: 400px; display: inline-block;border: 1px solid #ccc; margin-right: 10px; margin-bottom: 5px;" >
+
+                  <a href="{:U('Products/goods',array('id'=>$v['id']))}" target="_blank">
+                     <empty name="v.thumb"><img src="__PUBLIC__/Common/img/preview.jpg">
+                        <else/><img src="__PUBLIC__/Uploads/small/{$v.thumb}">
+                     </empty>
+                  </a>
+               <p>{$v.name}</p>
+               <p>￥{$v.price}</p>
+
+         </div>
+   </foreach>
+</div>
+-->
+

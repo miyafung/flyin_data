@@ -1,0 +1,66 @@
+<!--面包屑和标题--->
+<div id="content-header">
+	<div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> banner</a> <a href="#" class="current">服务添加</a> </div>
+	<h1>服务添加</h1>
+</div>
+
+
+<div class="container-fluid">
+	<hr>
+	<div class="row-fluid">
+		<div class="span12">
+
+
+<div class="top-button">
+	选择服务分类：<select id="category">
+	<option value="0">未分类</option>
+	<foreach name="servicecategory" item="v">
+		<option value="{$v.id}" <eq name="v.id" value="$cid">selected</eq>>{:str_repeat('— ',$v['level'])}{$v.name}</option>
+	</foreach>
+
+</select>
+	<a href="{:U('Services/index',array('cid'=>$cid))}" class="btn btn-primary">banner列表</a>
+	<a href="{:U('Servicecategory/add')}" class="btn btn-primary" >添加分类</a>
+</div>
+
+
+<present name="success"><div class="mssage">添加成功。</div></present>
+<div class="list auto">
+	<form method="post" enctype="multipart/form-data">
+		<table class="t2 t4">
+			<tr><th>banner名称：</th><td><input type="text" name="name" class="big"></td></tr>
+			<tr><th>banner编号：</th><td><input type="text" name="sn" ></td></tr>
+			<tr><th>是否上架：</th><td><select name="on_sale"><option value="yes" selected>是</option><option value="no">否</option></select></td></tr>
+			<tr><th>首页推荐：</th><td><select name="recommend"><option value="yes">是</option><option value="no" selected>否</option></select></td></tr>
+			<tr><th>date：</th><td><input type="date" name="date" ></td></tr>
+		</table>
+		<div class="editor">
+			<include file="Services/_editor" />
+			<script type="text/plain" id="myEditor" name="desc"><p>请在此处输入技术支持详情。</p></script>
+		</div>
+		<div style="margin-top: 20px">
+			<input class="btn btn-primary" type="submit" value="添加Services">
+			<input class="btn btn-primary" type="submit" value="添加并返回" name="return">
+		</div>
+	</form>
+</div>
+
+
+
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<script>
+    //下拉菜单跳转
+    $("#category").change(function(){
+        var url = "{:U('Services/add',array('cid'=>'_ID_'))}";
+        location.href = url.replace("_ID_",$(this).val());
+    });
+</script>

@@ -1,0 +1,82 @@
+<script src="__PUBLIC__/Admin/js/jquery.js"></script>
+
+<div id="content-header">
+	<div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 修改链接</a> <a href="#" class="current">修改链接</a> </div>
+	<h1>修改链接</h1>
+</div>
+
+
+<div class="container-fluid">
+	<hr>
+	<div class="row-fluid">
+		<div class="span12">
+
+			<!-- 添加链接表单 -->
+			<form action="__CONTROLLER__/upd/id/{$link.id}" method="post" enctype="multipart/form-data">
+				<table class="table table-bordered table-striped">
+
+					<!-- 修改链接名称 -->
+					<tr>
+						<th>链接名称:</th>
+						<td><input type="text" name="linkname" class="add_link_inp" value="{$link.linkname}" /></td>
+					</tr>
+-
+					<tr>
+					<!-- 修改链接URL -->
+						<th>链接URL:</th>
+						<td><input type="text" name="url" class="add_link_inp" value="{$link.url}" /></td>
+					</tr>
+
+					<!-- 修改链接的显示顺序 -->
+					<tr>
+						<th>显示顺序: </th>
+						<td><input type="number" name="linkorder" class="add_link_inp" value="{$link.linkorder}" style="width:60px;" /></td>
+					</tr>
+					
+					<!-- 审核链接 -->
+					<tr>
+						<!-- 设置链接是否显示 -->
+						<th>是否显示:</th>
+						<td>
+							<input type="radio" value="1" <if condition="$link.isshow eq 1">checked</if> name="isshow" /> 是 
+							<input type="radio" value="0" <if condition="$link.isshow eq 0">checked</if> name="isshow" /> 否
+						</td>
+					</tr>
+
+					<!-- 修改网站类型 -->
+					<tr>
+						<!-- 修改链接方式 -->
+						<th>链接方式:</th>
+						<td>
+							<select name="linktype" id="linktype" >
+								<option value="1">新窗口打开</option>
+								<option value="2">当前窗口打开</option>
+								<option value="3">父级窗口打开</option>
+								<option value="4">顶级窗口打开</option>
+							</select>
+						</td>
+					</tr>
+
+					<!-- 修改链接网站的描述说明 -->
+					<tr>
+						<th>链接介绍:</th>
+						<td colspan="3"><textarea name="introduction" cols="80" rows="4">{$link.introduction}</textarea></td>
+					</tr>
+
+					<!-- 修改链接的提交按钮 -->
+					<tr>
+						<td style="height:60px;line-height:60px;text-align:center;" colspan="4"><input type="submit" value="修改链接" id="add_link_btn" class="btn btn-primary"/></td>
+					</tr>
+				</table>
+			</form>
+
+
+		</div>
+	</div>
+</div>
+
+
+
+<script>
+	$("#linktype").find("option[value = {$link.linktype}]").attr("selected","selected");
+</script>

@@ -1,0 +1,77 @@
+<!--面包屑和标题--->
+<div id="content-header">
+	<div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i>新闻</a> <a href="#" class="current">修改新闻</a> </div>
+	<h1>修改新闻</h1>
+</div>
+
+
+<div class="container-fluid">
+	<hr>
+	<div class="row-fluid">
+		<div class="span12">
+
+
+
+			<present name="success">
+				<div class="alert alert-success alert-block mssage"> <a class="close" data-dismiss="alert" href="#">×</a>
+					<h4 class="alert-heading">修改成功</h4>
+				</div>
+			</present>
+
+			<div class="top-button">
+				修改新闻分类：<select id="newcategory">
+					<option value="0">未分类</option>
+					<foreach name="newcategory" item="v">
+						<option value="{$v.id}" <eq name="v.id" value="$cid">selected</eq>>{:str_repeat('— ',$v['level'])}{$v.name}</option>
+					</foreach>
+				</select>
+
+				<a style="margin: 10px;" href="{:U('News/index',array('cid'=>$cid,'p'=>$p))}" class="btn btn-primary">返回新闻列表</a>
+			</div>
+
+
+<div class="list auto">
+	<form method="post" enctype="multipart/form-data">
+	<input type="hidden" name="id" value="{$news.id}">
+	<table class="t2 t4">
+		<tr><th>新闻名称：</th><td><input type="text" name="name" value="{$news.name}" class="big"></td></tr>
+		<tr><th>新闻编号：</th><td><input type="text" name="sn" value="{$news.sn}" ></td></tr>
+		<tr><th>自定日期：</th><td><input type="date" name="custom_time" value="{$news.custom_time}" class="small"></td></tr>
+		<tr><th>是否上线：</th><td><select name="on_sale">
+			<option value="yes" <eq name="news.on_sale" value="yes">selected</eq>>是</option>
+				<option value="no" <eq name="news.on_sale" value="no">selected</eq>>否</option>
+		</select></td></tr>
+		<tr><th>首页推荐：</th><td><select name="recommend">
+			<option value="yes" <eq name="news.recommend" value="yes">selected</eq>>是</option>
+			<option value="no" <eq name="news.recommend" value="no">selected</eq>>否</option>
+		</select></td></tr>
+		<tr><th>修改图片：</th><td><input type="file" name="thumb" /></td></tr>
+		<tr><th>当前图片：</th><td>
+			<empty name="news.thumb">
+				<img src="__PUBLIC__/Common/img/preview.jpg">
+			<else/>
+				<img src="__PUBLIC__/Uploads/news/small/{$news.thumb}">
+			</empty>
+		</td></tr>
+	</table>
+	<div class="editor">
+		<include file="News/_editor" />
+		<script type="text/plain" id="myEditor" name="desc">{$news.desc}</script>
+	</div>
+	<div class="btn">
+		<input type="submit" value="保存修改">
+		<input type="submit" value="修改并返回" name="return">
+	</div>
+	</form>
+</div>
+
+				</div>
+	</div>
+</div>
+<script>
+	//下拉菜单跳转
+	$("#newcategory").change(function(){
+		var url = "{:U('News/edit',array('id'=>$id,'cid'=>'_ID_','p'=>$p))}";
+		location.href = url.replace("_ID_",$(this).val());
+	});
+</script>

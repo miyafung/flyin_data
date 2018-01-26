@@ -1,0 +1,28 @@
+
+
+<!-- End Home -->
+<div class="clearfix"></div>
+
+
+<div class="container" >
+    <div  style="margin-top: 80px;"></div>
+    <!-- End Home -->
+    <div class="row">
+        <ol class="breadcrumb">
+            <li><a href="#">Services</a></li>
+           <foreach name="path" item="v">
+               <li> <a href="{:U('Services/index',array('cid'=>$v['id']))}">{$v.name}</a></li>
+        </foreach>&nbsp;
+          <!--  <li>{$news.name}</li>-->
+        </ol>
+
+        <div class="center" style="text-align: center"> <h5>{$services.name}</h5></div>
+        <div class="center"  style="text-align: center">{$services.date}</div>
+        <div class="">{$services.desc}</div>
+</div>
+
+</div>
+
+
+<!--百度分享-->
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>

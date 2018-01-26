@@ -1,0 +1,58 @@
+
+
+<!--面包屑和标题--->
+<div id="content-header">
+    <div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 管理员</a> <a href="#" class="current">管理员添加</a> </div>
+    <h1>管理员添加</h1>
+</div>
+
+<div class="container-fluid">
+    <hr>
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="top-button">
+               <a href="{:U('Admin/add')}" class="btn btn-primary">添加管理员</a>
+            </div>
+
+                    <table class="table table-bordered table-striped">
+                        <thead class="">
+                        <tr>
+                            <th class="text-center">ID</th>
+                            <th class="text-center">用户名称</th>
+                            <th class="text-center">密码</th>
+                            <th class="text-center">添加时间</th>
+                            <th class="text-center">操作</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        <volist name="adminres" id="vo">
+                            <tr>
+                                <td align="center">{$vo.id}</td>
+                                <td align="center">{$vo.username}</td>
+                                <td align="center">{$vo.password}</td>
+                                <td align="center">{$vo.add_time}</td>
+                                <td align="center">
+                                    <a href="__CONTROLLER__/edit/id/{$vo.id}" class="btn btn-primary btn-sm shiny">
+                                        <i class="fa fa-edit"></i> 编辑
+                                    </a>
+                                    <a href="__CONTROLLER__/del/id/{$vo.id}" class="btn btn-danger btn-sm shiny">
+                                        <i class="fa fa-trash-o"></i> 删除
+                                    </a>
+                                </td>
+                            </tr>
+                        </volist>
+                        </tbody>
+                    </table>
+                    <div style="height:40px;">
+                        <ul class="pagination" style="float:right; margin:10px 0 0 0; ">
+                            {$page}
+                        </ul>
+                    </div>
+                </div>
+                <div>
+
+</div>
+    </div>
+    </div>

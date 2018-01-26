@@ -1,0 +1,43 @@
+
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/Css/adduser.css">
+		<script type="text/javascript" src="__PUBLIC__/Admin/Js/jquery.js"></script>
+
+		<center style="height:60px;line-height:60px;font-size:30px;"><strong style="color:#d39c59;">添加用户</strong></center>
+		<center id="my_user_parent">
+			<form action="__CONTROLLER__/insert" method="post" onsubmit="return fun()">
+				<table width="650" id="add_user_h">
+					<!-- 添加用户所属组 -->
+					<tr>
+						<th>所属组名:</th>
+						<td>
+							<select name="gid" id="" style="height:23px;">
+								<option value="">---</option>
+								<foreach name="groups" item="gp">
+									<option value="{$gp.id}">{$gp.groupname}</option>
+								</foreach>							
+							</select>
+						</td>
+					</tr>
+					<!-- 输入用户名 -->
+					<tr>
+						<th class="info_type">用&nbsp;户&nbsp;名:</th>
+						<td>
+							<input type="email" name="username" id="my_user_name" class="user_all_inp"/>
+							<span class="alt_info"></span>
+						</td>
+					</tr>
+
+					<!-- 输入用户密码 -->
+					<tr>
+						<th class="info_type">用户密码:</th>
+						<td>
+							<input type="password" name="passpwd" id="my_user_pwd" class="user_all_inp" />
+							<span class="alt_info"></span>
+						</td>
+					</tr>
+
+					<!-- 再次输入密码 -->
+					<tr>
+						<th class="info_type">确认密码:</th>
+						<td>
+							<input ty

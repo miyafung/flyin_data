@@ -1,0 +1,1688 @@
+[ 2017-11-29T15:02:18+08:00 ] 42.236.10.72 /En/Contact/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001441s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0051s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0078s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0094s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0087s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0064s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `flyin_message` [ RunTime:0.0049s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::assign(), called in /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/ContactController.class.php on line 42 and defined /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Controller.class.php 第 121 行.
+NOTIC: [8] Undefined variable: name /home/flyindat/domains/flyindata.com.cn/public_html/ThinkPHP/Library/Think/Controller.class.php 第 122 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+NOTIC: [8] Undefined variable: keywords /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/20d78c0b5538f3780c65be13ef269700.php 第 7 行.
+NOTIC: [8] Undefined variable: description /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/20d78c0b5538f3780c65be13ef269700.php 第 8 行.
+NOTIC: [8] Undefined variable: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/20d78c0b5538f3780c65be13ef269700.php 第 89 行.
+NOTIC: [8] Undefined variable: goods /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/20d78c0b5538f3780c65be13ef269700.php 第 191 行.
+NOTIC: [8] Undefined variable: goods /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/20d78c0b5538f3780c65be13ef269700.php 第 207 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052864s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000689s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000980s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001074s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-29T15:02:18+08:00 ] 42.236.102.184 /En/Common/view/cat_id/2/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000989s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001782s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0063s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0099s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0068s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 6,6   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0093s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0073s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 6,6   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `cat_id` = 2 LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT * FROM `flyin_goods` WHERE `cat_id` = 2 LIMIT 6,6   [ RunTime:0.0297s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000284s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000417s ]
+NOTIC: [8] Undefined variable: keywords /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/8fffb0405f2c1ed54fbf236e4b181080.php 第 7 行.
+NOTIC: [8] Undefined variable: description /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/8fffb0405f2c1ed54fbf236e4b181080.php 第 8 行.
+NOTIC: [8] Undefined variable: title /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/8fffb0405f2c1ed54fbf236e4b181080.php 第 9 行.
+NOTIC: [8] Undefined variable: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/8fffb0405f2c1ed54fbf236e4b181080.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059574s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059678s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000471s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000943s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000719s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-29T15:02:18+08:00 ] 42.236.10.74 /En/Goods/view/cat_id/3/goods_id/48.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001114s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001986s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0083s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0069s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0044s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0057s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0089s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `flyin_goods` WHERE (  goods_id = '48'  ) LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 129 行.
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 137 行.
+NOTIC: [8] Undefined index: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0027s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g LEFT JOIN flyin_gallery as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '48'  [ RunTime:0.0096s ]
+NOTIC: [8] Undefined index: img_big /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 166 行.
+NOTIC: [8] Undefined index: img_small /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 168 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0129s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g JOIN flyin_parameter as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '48'  [ RunTime:0.0008s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0046s ]
+SQL: SELECT `cat_id` FROM `flyin_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0041s ]
+SQL: SELECT `goods_id`,`goods_name`,`img_center`,`goods_pdf`,`cat_id` FROM `flyin_goods` WHERE `goods_id` = 48 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: goods_keyword /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000299s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000432s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050826s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000431s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000889s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000594s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000663s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-29T15:02:18+08:00 ] 42.236.10.84 /En/Goods/view/cat_id/1/goods_id/31.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0064s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0075s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0072s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0069s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0043s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0068s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `flyin_goods` WHERE (  goods_id = '31'  ) LIMIT 1   [ RunTime:0.0031s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 129 行.
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 137 行.
+NOTIC: [8] Undefined index: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0105s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g LEFT JOIN flyin_gallery as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '31'  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: img_big /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 166 行.
+NOTIC: [8] Undefined index: img_small /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 168 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0032s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g JOIN flyin_parameter as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '31'  [ RunTime:0.0105s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0045s ]
+SQL: SELECT `cat_id` FROM `flyin_category`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0059s ]
+SQL: SELECT `goods_id`,`goods_name`,`img_center`,`goods_pdf`,`cat_id` FROM `flyin_goods` WHERE `goods_id` = 31 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: goods_keyword /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000283s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000433s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058134s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058247s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000421s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-29T15:02:18+08:00 ] 42.236.10.109 /En/Goods/view/goods_id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001265s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0111s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0078s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0099s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0073s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0088s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0055s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0057s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0059s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `flyin_goods` WHERE (  goods_id = '29'  ) LIMIT 1   [ RunTime:0.0039s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 129 行.
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 137 行.
+NOTIC: [8] Undefined index: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0086s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g LEFT JOIN flyin_gallery as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '29'  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: img_big /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 166 行.
+NOTIC: [8] Undefined index: img_small /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 168 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0123s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g JOIN flyin_parameter as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '29'  [ RunTime:0.0009s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0043s ]
+SQL: SELECT `cat_id` FROM `flyin_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0038s ]
+SQL: SELECT `goods_id`,`goods_name`,`img_center`,`goods_pdf`,`cat_id` FROM `flyin_goods` WHERE `goods_id` = 29 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: goods_keyword /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000304s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000443s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072594s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000668s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001407s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000870s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000968s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-29T15:02:18+08:00 ] 42.236.10.110 /En/Goods/view/goods_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0052s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `flyin_goods` WHERE (  goods_id = '41'  ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 129 行.
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 137 行.
+NOTIC: [8] Undefined index: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0029s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g LEFT JOIN flyin_gallery as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '41'  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: img_big /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 166 行.
+NOTIC: [8] Undefined index: img_small /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 168 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0029s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g JOIN flyin_parameter as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '41'  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0024s ]
+SQL: SELECT `cat_id` FROM `flyin_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0028s ]
+SQL: SELECT `goods_id`,`goods_name`,`img_center`,`goods_pdf`,`cat_id` FROM `flyin_goods` WHERE `goods_id` = 41 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: goods_keyword /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000312s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000456s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062481s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000648s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-29T15:02:18+08:00 ] 42.236.49.117 /En/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001508s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000369s ]
+NOTIC: [8] Undefined variable: keywords /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/7c5ae9afca41c4db5a185988c366d902.php 第 7 行.
+NOTIC: [8] Undefined variable: description /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/7c5ae9afca41c4db5a185988c366d902.php 第 8 行.
+NOTIC: [8] Undefined variable: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/7c5ae9afca41c4db5a185988c366d902.php 第 89 行.
+NOTIC: [8] Undefined variable: goods /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/7c5ae9afca41c4db5a185988c366d902.php 第 198 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000870s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000620s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-29T15:02:18+08:00 ] 42.236.49.117 /En/Goods/view/cat_id/2/goods_id/37.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001647s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0043s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `flyin_goods` WHERE (  goods_id = '37'  ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 129 行.
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 137 行.
+NOTIC: [8] Undefined index: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0027s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g LEFT JOIN flyin_gallery as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '37'  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: img_big /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 166 行.
+NOTIC: [8] Undefined index: img_small /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 168 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0036s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g JOIN flyin_parameter as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '37'  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0019s ]
+SQL: SELECT `cat_id` FROM `flyin_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0033s ]
+SQL: SELECT `goods_id`,`goods_name`,`img_center`,`goods_pdf`,`cat_id` FROM `flyin_goods` WHERE `goods_id` = 37 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: goods_keyword /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000310s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000452s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058713s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000552s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000794s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-29T15:02:18+08:00 ] 42.236.10.115 /En/Goods/view/cat_id/1/goods_id/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001505s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0043s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `flyin_goods` WHERE (  goods_id = '24'  ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 129 行.
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 137 行.
+NOTIC: [8] Undefined index: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0030s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g LEFT JOIN flyin_gallery as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '24'  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: img_big /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 166 行.
+NOTIC: [8] Undefined index: img_small /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 168 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0031s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g JOIN flyin_parameter as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '24'  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0021s ]
+SQL: SELECT `cat_id` FROM `flyin_category`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0037s ]
+SQL: SELECT `goods_id`,`goods_name`,`img_center`,`goods_pdf`,`cat_id` FROM `flyin_goods` WHERE `goods_id` = 24 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: goods_keyword /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000419s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062729s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000610s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001343s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000845s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-29T15:02:19+08:00 ] 42.236.10.84 /En/Goods/view/cat_id/3/goods_id/49.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001107s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `flyin_goods` WHERE (  goods_id = '49'  ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 129 行.
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 137 行.
+NOTIC: [8] Undefined index: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0013s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g LEFT JOIN flyin_gallery as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '49'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: img_big /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 166 行.
+NOTIC: [8] Undefined index: img_small /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 168 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0013s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g JOIN flyin_parameter as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '49'  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0017s ]
+SQL: SELECT `cat_id` FROM `flyin_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0019s ]
+SQL: SELECT `goods_id`,`goods_name`,`img_center`,`goods_pdf`,`cat_id` FROM `flyin_goods` WHERE `goods_id` = 49 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: goods_keyword /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000241s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000711s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-29T15:02:19+08:00 ] 42.236.10.81 /En/Services/services/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`desc`,`custom_time`,`date` FROM `flyin_services` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant Services - assumed 'Services' /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/ServicesController.class.php 第 114 行.
+NOTIC: [8] Use of undefined constant services_info - assumed 'services_info' /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/ServicesController.class.php 第 114 行.
+NOTIC: [2] Division by zero /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/ServicesController.class.php 第 114 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+NOTIC: [8] Undefined variable: keywords /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/575b81ff9f09850508264ecd44c1643a.php 第 7 行.
+NOTIC: [8] Undefined variable: description /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/575b81ff9f09850508264ecd44c1643a.php 第 8 行.
+NOTIC: [8] Undefined variable: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/575b81ff9f09850508264ecd44c1643a.php 第 89 行.
+NOTIC: [8] Undefined index: name /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/575b81ff9f09850508264ecd44c1643a.php 第 193 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000431s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000957s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-29T15:02:19+08:00 ] 42.236.10.75 /En/Goods/view/goods_id/50.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0052s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `flyin_goods` WHERE (  goods_id = '50'  ) LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 129 行.
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 137 行.
+NOTIC: [8] Undefined index: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0040s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g LEFT JOIN flyin_gallery as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '50'  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: img_big /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 166 行.
+NOTIC: [8] Undefined index: img_small /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 168 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0040s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g JOIN flyin_parameter as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '50'  [ RunTime:0.0009s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0022s ]
+SQL: SELECT `cat_id` FROM `flyin_category`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0024s ]
+SQL: SELECT `goods_id`,`goods_name`,`img_center`,`goods_pdf`,`cat_id` FROM `flyin_goods` WHERE `goods_id` = 50 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: goods_keyword /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000332s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000480s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063932s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064068s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000731s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000981s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001081s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-29T15:02:19+08:00 ] 42.236.102.211 /En/Goods/view/cat_id/1/goods_id/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001695s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0110s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0053s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `flyin_goods` WHERE (  goods_id = '22'  ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 129 行.
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 137 行.
+NOTIC: [8] Undefined index: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0037s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g LEFT JOIN flyin_gallery as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '22'  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: img_big /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 166 行.
+NOTIC: [8] Undefined index: img_small /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 168 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0029s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g JOIN flyin_parameter as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '22'  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0061s ]
+SQL: SELECT `cat_id` FROM `flyin_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0021s ]
+SQL: SELECT `goods_id`,`goods_name`,`img_center`,`goods_pdf`,`cat_id` FROM `flyin_goods` WHERE `goods_id` = 22 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: goods_keyword /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000301s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000429s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069855s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000804s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001494s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000851s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000944s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-29T15:02:19+08:00 ] 42.236.39.146 /En/Goods/view/cat_id/2/goods_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0024s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0279s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0048s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `flyin_goods` WHERE (  goods_id = '41'  ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 129 行.
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 137 行.
+NOTIC: [8] Undefined index: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0021s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g LEFT JOIN flyin_gallery as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '41'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: img_big /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 166 行.
+NOTIC: [8] Undefined index: img_small /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 168 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0016s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g JOIN flyin_parameter as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '41'  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0014s ]
+SQL: SELECT `cat_id` FROM `flyin_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0034s ]
+SQL: SELECT `goods_id`,`goods_name`,`img_center`,`goods_pdf`,`cat_id` FROM `flyin_goods` WHERE `goods_id` = 41 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: goods_keyword /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000317s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000464s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000715s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000945s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001047s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-29T15:02:19+08:00 ] 42.236.10.81 /En/Category/view/cat_id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001596s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0024s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `cat_id` = 4 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `flyin_goods` WHERE `cat_id` = 4 LIMIT 0,6   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000264s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000402s ]
+NOTIC: [8] Undefined variable: keywords /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/8fffb0405f2c1ed54fbf236e4b181080.php 第 7 行.
+NOTIC: [8] Undefined variable: description /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/8fffb0405f2c1ed54fbf236e4b181080.php 第 8 行.
+NOTIC: [8] Undefined variable: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/8fffb0405f2c1ed54fbf236e4b181080.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000692s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000923s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001018s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-29T15:02:19+08:00 ] 42.236.10.78 /En/Common/view/cat_id/1/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001505s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0025s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 6,6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 6,6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `cat_id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `flyin_goods` WHERE `cat_id` = 1 LIMIT 6,6   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000261s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000379s ]
+NOTIC: [8] Undefined variable: keywords /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/8fffb0405f2c1ed54fbf236e4b181080.php 第 7 行.
+NOTIC: [8] Undefined variable: description /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/8fffb0405f2c1ed54fbf236e4b181080.php 第 8 行.
+NOTIC: [8] Undefined variable: title /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/8fffb0405f2c1ed54fbf236e4b181080.php 第 9 行.
+NOTIC: [8] Undefined variable: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/8fffb0405f2c1ed54fbf236e4b181080.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067078s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000669s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000878s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000978s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-29T15:02:19+08:00 ] 42.236.102.175 /En/Services/index/cid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001102s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001911s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0108s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `servicecategory_id` IN (1) AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `servicecategory_id` IN (1) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `servicecategory_id` IN (1) ORDER BY id desc LIMIT 0,6   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `newcategory_id` IN (1) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `newcategory_id` IN (1) ORDER BY id desc LIMIT 0,6   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+NOTIC: [8] Use of undefined constant services - assumed 'services' /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/ServicesController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0025s ]
+SQL: select count(id) as num,FROM_UNIXTIME(date,'%Y年%m月') as t,FROM_UNIXTIME(date,'%Y/%m') as t1  from flyin_services group by t order by t desc [ RunTime:0.0013s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `servicecategory_id` IN (1) AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `servicecategory_id` IN (1) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `servicecategory_id` IN (1) ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/ServicesController.class.php 第 50 行.
+NOTIC: [8] Undefined index: name /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/ServicesController.class.php 第 51 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000280s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000398s ]
+NOTIC: [8] Undefined variable: keywords /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/b0a1b6925d25eaa658d0863f85bb8505.php 第 7 行.
+NOTIC: [8] Undefined variable: description /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/b0a1b6925d25eaa658d0863f85bb8505.php 第 8 行.
+NOTIC: [8] Undefined variable: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/b0a1b6925d25eaa658d0863f85bb8505.php 第 89 行.
+NOTIC: [8] Undefined index: desc /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/b0a1b6925d25eaa658d0863f85bb8505.php 第 234 行.
+NOTIC: [8] Undefined index: desc /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/b0a1b6925d25eaa658d0863f85bb8505.php 第 234 行.
+NOTIC: [8] Undefined index: desc /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/b0a1b6925d25eaa658d0863f85bb8505.php 第 234 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000837s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000932s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-29T15:02:19+08:00 ] 42.236.10.71 /En/Goods/index/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 18,6   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 18,6   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0018s ]
+SQL: SELECT g.*,c.cat_name FROM flyin_goods as g LEFT JOIN flyin_category as c ON g.cat_id = c.cat_id  LIMIT 18,6   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000243s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000357s ]
+NOTIC: [8] Undefined variable: keywords /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/8fffb0405f2c1ed54fbf236e4b181080.php 第 7 行.
+NOTIC: [8] Undefined variable: description /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/8fffb0405f2c1ed54fbf236e4b181080.php 第 8 行.
+NOTIC: [8] Undefined variable: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/8fffb0405f2c1ed54fbf236e4b181080.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000768s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-29T15:02:20+08:00 ] 180.153.236.59 /En/News/index/cid/16.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0024s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `servicecategory_id` IN (16) AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `servicecategory_id` IN (16) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `servicecategory_id` IN (16) ORDER BY id desc LIMIT 0,6   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0117s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `newcategory_id` IN (16) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `newcategory_id` IN (16) ORDER BY id desc LIMIT 0,6   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000254s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000394s ]
+NOTIC: [8] Undefined variable: keywords /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/7c5ae9afca41c4db5a185988c366d902.php 第 7 行.
+NOTIC: [8] Undefined variable: description /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/7c5ae9afca41c4db5a185988c366d902.php 第 8 行.
+NOTIC: [8] Undefined variable: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/7c5ae9afca41c4db5a185988c366d902.php 第 89 行.
+NOTIC: [8] Undefined variable: goods /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/7c5ae9afca41c4db5a185988c366d902.php 第 198 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070051s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000635s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000892s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000990s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-29T15:02:20+08:00 ] 42.236.10.78 /En/Goods/view/goods_id/32.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001735s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `flyin_goods` WHERE (  goods_id = '32'  ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 129 行.
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 137 行.
+NOTIC: [8] Undefined index: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0020s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g LEFT JOIN flyin_gallery as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '32'  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: img_big /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 166 行.
+NOTIC: [8] Undefined index: img_small /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 168 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0025s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g JOIN flyin_parameter as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '32'  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0022s ]
+SQL: SELECT `cat_id` FROM `flyin_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0026s ]
+SQL: SELECT `goods_id`,`goods_name`,`img_center`,`goods_pdf`,`cat_id` FROM `flyin_goods` WHERE `goods_id` = 32 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: goods_keyword /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000305s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000434s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068127s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000699s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000903s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001003s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-29T15:02:20+08:00 ] 42.236.10.112 /En/Common/view/cat_id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `cat_id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `flyin_goods` WHERE `cat_id` = 5 LIMIT 0,6   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+NOTIC: [8] Undefined variable: keywords /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/8fffb0405f2c1ed54fbf236e4b181080.php 第 7 行.
+NOTIC: [8] Undefined variable: description /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/8fffb0405f2c1ed54fbf236e4b181080.php 第 8 行.
+NOTIC: [8] Undefined variable: title /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/8fffb0405f2c1ed54fbf236e4b181080.php 第 9 行.
+NOTIC: [8] Undefined variable: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/8fffb0405f2c1ed54fbf236e4b181080.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047974s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000714s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001441s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000944s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001040s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-29T15:02:20+08:00 ] 42.236.48.81 /En/Services/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001179s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+NOTIC: [8] Use of undefined constant services - assumed 'services' /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/ServicesController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0024s ]
+SQL: select count(id) as num,FROM_UNIXTIME(date,'%Y年%m月') as t,FROM_UNIXTIME(date,'%Y/%m') as t1  from flyin_services group by t order by t desc [ RunTime:0.0012s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/ServicesController.class.php 第 50 行.
+NOTIC: [8] Undefined index: name /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/ServicesController.class.php 第 51 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000313s ]
+NOTIC: [8] Undefined variable: keywords /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/b0a1b6925d25eaa658d0863f85bb8505.php 第 7 行.
+NOTIC: [8] Undefined variable: description /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/b0a1b6925d25eaa658d0863f85bb8505.php 第 8 行.
+NOTIC: [8] Undefined variable: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/b0a1b6925d25eaa658d0863f85bb8505.php 第 89 行.
+NOTIC: [8] Undefined index: desc /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/b0a1b6925d25eaa658d0863f85bb8505.php 第 234 行.
+NOTIC: [8] Undefined index: desc /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/b0a1b6925d25eaa658d0863f85bb8505.php 第 234 行.
+NOTIC: [8] Undefined index: desc /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/b0a1b6925d25eaa658d0863f85bb8505.php 第 234 行.
+NOTIC: [8] Undefined index: desc /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/b0a1b6925d25eaa658d0863f85bb8505.php 第 234 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049926s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000454s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000686s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-29T15:02:20+08:00 ] 180.153.236.125 /En/Goods/view/cat_id/2/goods_id/34.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `flyin_goods` WHERE (  goods_id = '34'  ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 129 行.
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 137 行.
+NOTIC: [8] Undefined index: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0014s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g LEFT JOIN flyin_gallery as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '34'  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: img_big /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 166 行.
+NOTIC: [8] Undefined index: img_small /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 168 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0015s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g JOIN flyin_parameter as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '34'  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0017s ]
+SQL: SELECT `cat_id` FROM `flyin_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0022s ]
+SQL: SELECT `goods_id`,`goods_name`,`img_center`,`goods_pdf`,`cat_id` FROM `flyin_goods` WHERE `goods_id` = 34 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: goods_keyword /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000324s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000452s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092873s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000703s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001441s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000942s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001042s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-29T15:02:20+08:00 ] 42.236.10.106 /En/Goods/view/goods_id/49.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000949s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001592s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `flyin_goods` WHERE (  goods_id = '49'  ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 129 行.
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 137 行.
+NOTIC: [8] Undefined index: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0021s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g LEFT JOIN flyin_gallery as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '49'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: img_big /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 166 行.
+NOTIC: [8] Undefined index: img_small /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 168 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0022s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g JOIN flyin_parameter as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '49'  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0015s ]
+SQL: SELECT `cat_id` FROM `flyin_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0022s ]
+SQL: SELECT `goods_id`,`goods_name`,`img_center`,`goods_pdf`,`cat_id` FROM `flyin_goods` WHERE `goods_id` = 49 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: goods_keyword /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000343s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000470s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000760s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000943s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001041s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-29T15:02:20+08:00 ] 180.153.234.145 /En/Goods/view/cat_id/1/goods_id/27.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001779s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0025s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `flyin_goods` WHERE (  goods_id = '27'  ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 129 行.
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 137 行.
+NOTIC: [8] Undefined index: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0019s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g LEFT JOIN flyin_gallery as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '27'  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: img_big /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 166 行.
+NOTIC: [8] Undefined index: img_small /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 168 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0019s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g JOIN flyin_parameter as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '27'  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0026s ]
+SQL: SELECT `cat_id` FROM `flyin_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0023s ]
+SQL: SELECT `goods_id`,`goods_name`,`img_center`,`goods_pdf`,`cat_id` FROM `flyin_goods` WHERE `goods_id` = 27 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: goods_keyword /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000284s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000407s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000718s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001415s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001090s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001179s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-29T15:02:20+08:00 ] 42.236.102.244 /En/Common/view/cat_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011046s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011786s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0042s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0025s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0025s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0117s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0082s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `cat_id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `flyin_goods` WHERE `cat_id` = 3 LIMIT 0,6   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+NOTIC: [8] Undefined variable: keywords /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/8fffb0405f2c1ed54fbf236e4b181080.php 第 7 行.
+NOTIC: [8] Undefined variable: description /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/8fffb0405f2c1ed54fbf236e4b181080.php 第 8 行.
+NOTIC: [8] Undefined variable: title /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/8fffb0405f2c1ed54fbf236e4b181080.php 第 9 行.
+NOTIC: [8] Undefined variable: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/8fffb0405f2c1ed54fbf236e4b181080.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000853s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000948s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-29T15:02:20+08:00 ] 42.236.102.181 /En/Goods/view/cat_id/1/goods_id/32.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001624s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0047s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0025s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0064s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0039s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `flyin_goods` WHERE (  goods_id = '32'  ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 129 行.
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 137 行.
+NOTIC: [8] Undefined index: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0019s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g LEFT JOIN flyin_gallery as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '32'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: img_big /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 166 行.
+NOTIC: [8] Undefined index: img_small /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Model/GoodsModel.class.php 第 168 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0024s ]
+SQL: SELECT g.*,gg.* FROM flyin_goods as g JOIN flyin_parameter as gg ON g.goods_id = gg.goods_id  WHERE g.goods_id = '32'  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0015s ]
+SQL: SELECT `cat_id` FROM `flyin_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0020s ]
+SQL: SELECT `goods_id`,`goods_name`,`img_center`,`goods_pdf`,`cat_id` FROM `flyin_goods` WHERE `goods_id` = 32 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: goods_keyword /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/GoodsController.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000305s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000437s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065492s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000561s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000713s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+
+[ 2017-11-29T15:02:20+08:00 ] 180.153.236.189 /En/Category/view/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000791s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000929s ]
+INFO: Run Behavior\GetcodingBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001787s ]
+SQL: SHOW COLUMNS FROM `flyin_category` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `flyin_category`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: historyen /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `flyin_friendlink` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`linkname`,`url` FROM `flyin_friendlink` WHERE `isshow` = 1 ORDER BY linkorder  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_website` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`title`,`copy`,`logo`,`description`,`hotsearch`,`keywords`,`address`,`linkman`,`cellphone`,`cellphone`,`tel`,`fax`,`mail`,`qq` FROM `flyin_website` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_servicecategory` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_servicecategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`servicecategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_services` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_services` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`name`,`thumb` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `servicecategory_id`,`id`,`name`,`thumb`,`custom_time`,`date` FROM `flyin_services` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `flyin_newcategory` [ RunTime:0.0024s ]
+SQL: SELECT `id`,`name`,`pid` FROM `flyin_newcategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`newcategory_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`add_time`,`custom_time`,`desc`,`recycle` FROM `flyin_news` WHERE `recommend` = 'yes' AND `on_sale` = 'yes' AND `recycle` = 'no' LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `flyin_news` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `newcategory_id`,`id`,`name`,`thumb`,`custom_time`,`desc` FROM `flyin_news` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: cat_id /home/flyindat/domains/flyindata.com.cn/public_html/Application/En/Controller/CommonController.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `flyin_goods` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `flyin_goods` WHERE `cat_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `flyin_goods` WHERE `cat_id` = 1 LIMIT 0,6   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000274s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000410s ]
+NOTIC: [8] Undefined variable: keywords /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/8fffb0405f2c1ed54fbf236e4b181080.php 第 7 行.
+NOTIC: [8] Undefined variable: description /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/8fffb0405f2c1ed54fbf236e4b181080.php 第 8 行.
+NOTIC: [8] Undefined variable: history /home/flyindat/domains/flyindata.com.cn/public_html/Application/Runtime/Cache/En/8fffb0405f2c1ed54fbf236e4b181080.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052682s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000725s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001471s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000932s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001029s ]
+NOTIC: [8] Constant URL_COMPAT already defined /home/flyindat/domains/flyindata.com.cn/public_html/index.php 第 33 行.
+

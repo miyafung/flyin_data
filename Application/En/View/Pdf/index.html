@@ -1,0 +1,54 @@
+<!-- Listing Start -->
+<section id="listing1" class="listing1 padding_top">
+    <div class="container">
+        <div class="row">
+        <h3>PDF速查</h3>
+            <!--商品分类-->
+            <a href="{:U('Pdf/orderByName')}" class="btn btn-primary" style="margin-right: 20px;">Sort by alphabetical order</a>
+                <form action="" method="post">
+                    <input type="search" name="keywords"  placeholder="请输入PDF文档名字..." class="keyword-input"/>
+                    <button type="submit" class="tip-bottom" title="Search"><i class="fa fa-search"></i></button>
+                </form>
+
+                 <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Product Name</th>
+                                <th>Document Name</th>
+                                <th>Download</th>
+
+                            </tr>
+                        </thead>
+                            <foreach name="pdfsearch" item="lk">
+                                <tr>
+                                    <td align="center">{$lk.goods_id}</td>
+                                    <td align="center">{$lk.goods_name}</td>
+                                    <td>
+                                        <a href=" __PUBLIC__/Uploads/pdf/{$lk.goods_pdf}" target="_blank">
+                                            <img src="__PUBLIC__/Home/images/PDF.png" border="0"/>{$lk.goods_pdf}
+                                         </a>
+                                    </td>
+                                    <!--
+
+                                    -->
+                                    <td style="text-align: center;font-size: 14px">
+                                        <a href="{:U('Pdf/downloadFile',array('goods_id'=>$lk['goods_id']))}"><i class="icon-download-alt"></i>  <br> {$lk.pdfhits}</a>
+                                        <!-- 下载次数 -->
+                                        <script>
+                                            var ajax;
+                                            if(window.XMLHttpRequest){ ajax = new XMLHttpRequest();}else{ ajax = new ActiveXObject('Microsoft.XMLHTTP');}
+                                            ajax.open('GET','__MODULE__/Pdf/downloadFile/{$_GET['goods_id']}',true);
+                                            ajax.send();
+                                        </script>
+
+
+                                    </td>
+                                </tr>
+                            </foreach>
+                    </table>
+        </div>
+    </div>
+</section>
+
+

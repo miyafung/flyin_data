@@ -1,0 +1,34 @@
+<div class="pc_box" style="margin-top: 30px; display: inline-block">
+<div class="subnav">
+	<div class="pc_title">产品分类</div>
+		<volist name="category" id="v1" offset="0" length="20">
+	<div class="subline">
+		<!--<a href="{:U('Products/find',array('cid'=>$v1['id']))}">{$v1.name}</a>-->
+		<a href="{:U('Products/index',array('cid'=>$v1['id']))}">{$v1.name}</a>
+	</div>
+	<ul>
+		<present name="v1.child">
+			<foreach name="v1.child" item="v2">
+			<!--<a href="{:U('Products/find',array('cid'=>$v2['id']))}">{$v2.name}</a>-->
+				<a href="{:U('Products/index',array('cid'=>$v2['id']))}">{$v2.name}</a>
+			</foreach>
+		</present>
+	</ul>
+</volist>
+	<div class="clear"></div>
+</div>
+</div>
+
+
+<script>
+    //产品分类页面左侧导航
+    $('.pc_box .subnav .subline').click(function(){
+        $(this).css({"background-color": "#afafaf"});
+        $('.pc_box .subnav ul').eq($(this).index()/2).removeClass("menu_chioce");
+        $('.subnav ul li img').attr("src","up_icon.png");
+        $('.pc_box .subnav ul').eq($(this).index()/2).find('img').attr("src","down_icon.png");
+        $('.menu_chioce').slideUp();
+        //$('.pc_box .subnav ul').eq($(this).index()/2).slideToggle();
+        $('.pc_box .subnav ul').eq($(this).index()/2).addClass("menu_chioce");
+    });
+</script>

@@ -1,0 +1,170 @@
+<div id="content-header">
+	<div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> banner</a> <a href="#" class="current">产品列表</a> </div>
+	<h1>产品列表</h1>
+	<ul class="stat-boxes2">
+		<li>
+			<div class="right"> 产品总数<strong>{$goodsCount}</strong> </div>
+		</li>
+		<li>
+			<div class="right"> Hot!<strong>{$goodsHotCount}</strong> </div>
+		</li>
+	</ul>
+
+	<ul class="stat-boxes2">
+		<li>
+			<div class="right">
+				<h4>日期范围查询</h4>
+				<form action="{:U('Goods/goodstime')}" method="post">
+					<input name="datestart" type="date" value="2017-01-01">至
+					<input name="dateend" type="date" value="2018-01-01">
+					<button type="submit" class="tip-bottom"><i class="icon-search icon-white"></i></button>
+					<a href="{:U('Goods/view')}"  class="btn btn-primary btn-lg">返回列表</a>
+				</form>
+
+			</div>
+		</li>
+	</ul>
+</div>
+
+<div class="container-fluid">
+	<hr>
+	<div class="row-fluid">
+		<div class="span12">
+			<div>
+				<a href="{:U('Goods/add')}" class="btn btn-primary btn-lg">添加商品</a>
+			</div>
+
+			<div>
+				<table class="table table-bordered table-hover table-striped">
+					<thead>
+					<th>序号</th>
+					<th>HOT</th>
+					<th>商品图片</th>
+					<th>商品编号</th>
+					<th>商品名称</th>
+					<th>分类名称</th>
+					<th>访问量</th>
+					<th>预览&二维码</th>
+					<th>操作</th>
+					</thead>
+
+					<volist name="goodsLi" id="vo" key="k">
+						<tr>
+							<!--<td>{$vo.goods_id}</td>-->
+							<td>{$k}</td>
+							<td width="20px;">
+								<a href="#" class="act-hot" data-id="{$vo.goods_id}" data-status="{$vo.hot}"><eq name="vo.hot" value="yes"><i  class="icon-fire red" style=" font-size:20px;color:red;"></i><else/><i  class="icon-fire red" style=" font-size:20px;"></i></eq></a>
+							</td>
+							<td><notempty name="vo.img_center"><img src="__PUBLIC__/Uploads/products/small/{$vo.img_center}" /></notempty></td>
+							<td>{$vo.goods_price}</td>
+							<td>{$vo.goods_name}</td>
+							<td>{$vo.cat_name}</td>
+							<td>
+								<!--判断该$vo.hits 是否大于等于9999-->
+								<if condition="$vo.hits egt '9999'">
+									99999+
+									<else /> {$vo.hits}
+								</if>
+
+							</td>
+							<td>
+								<a target="_blank" href="http://flyindata.com.cn/Goods/view/goods_id/{$vo.goods_id}.html"><i class="icon-eye-open" style=" font-size:18px;"></i></a>
+								<!--
+								<a target="_blank" href="{:U('Goods/qrcode2?goods_id=' . $vo['goods_id'])}"> <i class=" icon-barcode" style=" font-size:18px;"></i></a>
+							    -->
+
+								<!-- 按钮触发模态框 -->
+								<a data-toggle="modal" data-target="#myModal{$vo.goods_id}"><i class=" icon-barcode" style=" font-size:18px;"></i></a>
+								<!--
+								<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal{$vo.goods_id}">点</button>-->
+								<!-- 模态框（Modal） -->
+								<div class="modal fade" id="myModal{$vo.goods_id}" tabindex="-1000" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+												<h4 class="modal-title" id="myModalLabel">{$vo.goods_name}</h4>
+											</div>
+											<div class="modal-body">
+												<img src="{:U('Goods/qrcode2?goods_id=' . $vo['goods_id'])}" />
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+												<!--<button type="button" class="btn btn-primary">提交更改</button>-->
+											</div>
+										</div><!-- /.modal-content -->
+									</div><!-- /.modal -->
+								</div>
+								<!-- 按钮触发模态框 -->
+
+
+
+
+
+							</td>
+							<td>
+								<a href="{:U('Goods/edit?goods_id=' . $vo['goods_id'])}">编辑</a>
+								<a href="{:U('Goods/delete?goods_id=' . $vo['goods_id'])}">删除</a>
+							</td>
+						</tr>
+					</volist>
+				</table>
+			</div>
+
+			<!--分页
+			<div class="pagelist">{$goods.pagelist}</div>
+			-->
+			<div style="height:40px;">
+				<ul class="pagination" style="float:right; margin:10px 0 0 0; ">
+					<div style="height:40px;">
+						<ul class="pagination" style="float:right; margin:10px 0 0 0; ">
+							{$goods.pagelist}
+						</ul>
+					</div>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<form method="post" id="form">
+	<input type="hidden" name="goods_id" id="target_id">
+	<input type="hidden" name="field" id="target_field">
+	<input type="hidden" name="status" id="target_status">
+</form>
+
+<script>
+    function change_status(obj,field){
+        $("#target_id").val(obj.attr("data-id"));
+        $("#target_field").attr("value",field)
+        $("#target_status").attr("value",(obj.attr("data-status")=="yes") ? "no" : "yes");
+        $("#form").attr("action","{:U('Goods/change')}").submit();
+    }
+    //快捷操作-上架
+    $(".act-hot").click(function(){
+        change_status($(this),'hot');
+    });
+</script>
+
+
+<script type="text/javascript">
+    $(function(){
+        // dom加载完毕
+        var $m_btn = $('#modalBtn');
+        var $modal = $('#myModal');
+        $m_btn.on('click', function(){
+            $modal.modal({backdrop: 'static'});
+        });
+        // 测试 bootstrap 居中
+        $modal.on('show.bs.modal', function(){
+            var $this = $(this);
+            var $modal_dialog = $this.find('.modal-dialog');
+            // 关键代码，如没将modal设置为 block，则$modala_dialog.height() 为零
+            $this.css('display', 'block');
+            $modal_dialog.css({'margin-top': Math.max(0, ($(window).height() - $modal_dialog.height()) / 2) });
+        });
+
+    });
+</script>
+

@@ -1,0 +1,48 @@
+
+<div id="content-header">
+	<div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 分类</a> <a href="#" class="current">分类</a> </div>
+	<h1>分类列表</h1>
+</div>
+
+
+<div class="container-fluid">
+	<hr>
+	<div class="row-fluid">
+		<div class="span12">
+
+		<div class="top-button">
+			相关操作：<a href="{:U('Newcategory/add')}" class="btn btn-primary">添加新闻分类</a>
+		</div>
+			<table class="table table-bordered table-striped">
+				<tr>
+					<tead>
+						<th>新闻分类名称</th>
+						<th>操作</th>
+					</tead>
+				</tr>
+				<foreach name="newcategory" item="v">
+					<tr>
+						<td>{:str_repeat('— ',$v['level'])}{$v.name}</td>
+							<td><a href="{:U('Newcategory/edit',array('id'=>$v['id']))}">修改</a>　<a href="#" class="act-del" data-id="{$v.id}" >删除</a>
+						</td>
+					</tr>
+				</foreach>
+			</table>
+
+			<form method="post" id="form">
+				<input type="hidden" name="id" id="target_id">
+			</form>
+
+			</div>
+		</div>
+	</div>
+
+<script>
+	//删除
+	$(".act-del").click(function(){
+		if(confirm('确定要删除吗？（该分类下的商品将归于未分类）')){
+			$("#target_id").val($(this).attr("data-id"));
+			$("#form").attr("action","{:U('Newcategory/del')}").submit();
+		}
+	});
+</script>

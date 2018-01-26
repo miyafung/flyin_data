@@ -1,0 +1,27 @@
+<div class="title">banner分类</div>
+<div class="top-button">
+	相关操作：<a href="{:U('Bannercategory/add')}" class="light">添加banner分类</a>
+</div>
+
+<div class="list full auto">
+	<table>
+		<tr><th>banner分类名称</th><th>操作</th></tr>
+		<foreach name="bannercategory" item="v">
+			<tr><td>{:str_repeat('— ',$v['level'])}{$v.name}</td><td><a href="{:U('Bannercategory/edit',array('id'=>$v['id']))}">修改</a>　<a href="#" class="act-del" data-id="{$v.id}" >删除</a></td></tr>
+		</foreach>
+	</table>
+</div>
+
+<form method="post" id="form">
+	<input type="hidden" name="id" id="target_id">
+</form>
+
+<script>
+	//删除
+	$(".act-del").click(function(){
+		if(confirm('确定要删除吗？（该分类下的banner将归于未分类）')){
+			$("#target_id").val($(this).attr("data-id"));
+			$("#form").attr("action","{:U('Bannercategory/del')}").submit();
+		}
+	});
+</script>
